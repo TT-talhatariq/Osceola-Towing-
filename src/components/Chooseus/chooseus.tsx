@@ -1,0 +1,103 @@
+import React from "react";
+import Image from "next/image";
+import Button from "@/components/Button";
+import { ChooseProps } from "./type";
+import { Item } from "./type";
+
+function Chooseus({
+  title,
+  image,
+  heading,
+  subHeading,
+  data,
+  description,
+  perfectForItems = [],
+  ulHeading,
+  visible = "hidden",
+}: ChooseProps) {
+  return (
+    <div>
+      {" "}
+      <div className="raleway lg:flex items-center justify-between lg:pl-24  gap-10 mt-24">
+        <div className="lg:px-0 px-5">
+          <h1 className="lg:text-[22px] text-[14px]  lg:w-[50%] text-[#F6B620] font-medium">
+            {title}
+          </h1>
+          <h1 className="lg:text-[43px] text-[25px] font-bold">{heading}</h1>
+          <Image
+            src="/assets/yellow-vector.svg"
+            alt="circle"
+            width={326}
+            height={7}
+          />
+          <h1 className="lg:text-[43px] mb-5  text-[25px] font-bold">
+            {subHeading}
+          </h1>
+          <p
+            className={`lg:text-[17px] text-[#666666] lg:w-[600px] text-[14px] leading-[2]  lg:mb-5 mb-3`}
+          >
+            {description}
+          </p>
+          {perfectForItems.length > 0 && (
+            <div className="mb-5">
+              <h2 className="text-lg lg:mb-5 mb-3 text-[#F6B620] font-bold">
+                {ulHeading}
+              </h2>
+              <ul className="list-disc pl-5 space-y-2 ">
+                {perfectForItems.map((item, index) => (
+                  <li key={index} className="text-[#232323]  opacity-80">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <div className={`${visible === "block" ? "block" : "hidden"}`}>
+            <Button
+              title="Book A Service"
+              width={"lg:w-[182px] mx-0 w-[153px]"}
+            />
+          </div>
+          {data
+            ? data.map((item: Item, index: number) => {
+                return (
+                  <div
+                    style={{
+                      backgroundColor: "#F6F6F6",
+                      border: "1px solid #F6B620",
+
+                      boxShadow: "0px 1px 10px 1px #D7D5D5",
+                    }}
+                    key={index}
+                    className="flex mt-5 shadow-xl lg:gap-5 gap-3 lg:p-[15px] p-[10px] rounded-lg lg:rounded-2xl"
+                  >
+                    <Image
+                      src="/assets/small-circle.svg"
+                      alt="circle"
+                      width={15}
+                      height={15}
+                      className="lg:w-[15px] lg:h-[15px] w-[10px] h-[10px]  mt-2"
+                    />
+                    <div>
+                      <h1 className="text-[#232323] lg:text-[27px] text-[16px] font-medium">
+                        {item.heading}
+                      </h1>
+
+                      <p className="text-[#666666] lg:text-[18px] text-[10px]">
+                        {item.para}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })
+            : ""}
+        </div>
+        <div className="lg:mt-0 mt-10">
+          <Image src={image} alt="circle" width={699} height={465} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Chooseus;

@@ -1,0 +1,13 @@
+{
+  "NavigationLink": [
+    { "name": "Home", "link": "/services" },
+    { "name": "About Us", "link": "/light-medium" },
+    { "name": "Services", "link": "/heavy" },
+    { "name": "Gallery", "link": "/gallery" },
+    { "name": "Contact Us", "link": "/gallery" }
+  ],
+  "SupportLink": [
+    { "name": "Privacy Policy", "link": "/" },
+    { "name": "Terms & Services", "link": "/" }
+  ]
+}
