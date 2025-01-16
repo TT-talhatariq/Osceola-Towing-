@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
 import Button from "@/components/Button";
 import { ServiceProps, Item } from "./type";
+import Link from "next/link";
 function Services({
   backgroundImage,
   title,
@@ -12,7 +13,7 @@ function Services({
 }: ServiceProps) {
   return (
     <div
-      className={`${backgroundImage} lg:mt-0 mt-10 raleway bg-cover lg:bg-no-repeat  lg:bg-center ${visible === "block" ? " lg:pt-[350px]  lg:h-[1050px] lg:py-0 py-14" : "pt-20 pb-10"} w-full  `}
+      className={`${backgroundImage} lg:mt-0 mt-10 raleway bg-cover lg:bg-no-repeat  lg:bg-center ${visible === "block" ? " lg:pt-[270px]  lg:h-[950px] lg:py-0 py-14" : "pt-20 pb-10"} w-full  `}
     >
       <div className=" lg:px-24 px-5 raleway ">
         <h1
@@ -65,12 +66,12 @@ function Services({
             : "loading"}
         </div>
 
-        <div className={`${visible}`}>
+        <Link href="/services" className={`${visible}`}>
           <Button
             title="Learn More About Our Services"
             width={"lg:w-[348px] w-[250px]"}
           />
-        </div>
+        </Link>
       </div>
     </div>
   );

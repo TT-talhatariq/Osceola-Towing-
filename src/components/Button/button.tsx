@@ -9,11 +9,12 @@ function Button({
   textColor = "text-white",
   iconColor = "text-[#F6B620]",
   iconbg = "bg-white",
+  center = "lg:mx-auto",
 }: ButtonProps) {
   return (
     <div>
       <div
-        className={`flex items-center lg:gap-3 gap-2 ${bgcolor} ${width} justify-center lg:mx-auto ${textColor} text-center rounded-full h-[35px] lg:h-[53px]`}
+        className={`flex items-center lg:gap-3 gap-2 ${bgcolor} ${width} ${center} justify-center ${textColor} text-center rounded-full h-[35px] lg:h-[53px]`}
       >
         <button className={`lg:text-[18px] text-[14px]`}>{title}</button>
         <div

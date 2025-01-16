@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
 import { AboutusProps } from "./type";
+import Link from "next/link";
 function Aboutus({
   serviceNumber,
   title,
@@ -16,7 +17,7 @@ function Aboutus({
 }: AboutusProps) {
   return (
     <div
-      className={`flex ${background}  bg-cover bg-center bg-no-repeat lg:flex-row flex-col-reverse justify-between  lg:gap-10 lg:p-24  p-4 `}
+      className={`flex ${background}  bg-cover bg-center bg-no-repeat lg:flex-row flex-col-reverse justify-between  lg:gap-10 lg:px-24 lg:pt-24 p-4 `}
     >
       <div className={`lg:w-[50%]`}>
         <div className="relative">
@@ -68,8 +69,13 @@ function Aboutus({
             </ul>
           </div>
         )}
-
-        <Button title={buttonText} width={"lg:w-[182px] mx-0 w-[153px]"} />
+        <Link href="/about-us">
+          <Button
+            title={buttonText}
+            center=""
+            width={"lg:w-[182px] mx-0 w-[153px]"}
+          />
+        </Link>
       </div>
     </div>
   );

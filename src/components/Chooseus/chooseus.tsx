@@ -18,7 +18,7 @@ function Chooseus({
   return (
     <div>
       {" "}
-      <div className="raleway lg:flex items-center justify-between lg:pl-24  gap-10 mt-24">
+      <div className="raleway lg:flex items-center justify-between lg:pl-24  gap-10 mt-20">
         <div className="lg:px-0 px-5">
           <h1 className="lg:text-[22px] text-[14px]  lg:w-[50%] text-[#F6B620] font-medium">
             {title}
@@ -29,6 +29,7 @@ function Chooseus({
             alt="circle"
             width={326}
             height={7}
+            className="w-[326px] mx-auto"
           />
           <h1 className="lg:text-[43px] mb-5  text-[25px] font-bold">
             {subHeading}
@@ -52,9 +53,10 @@ function Chooseus({
               </ul>
             </div>
           )}
-          <div className={`${visible === "block" ? "block" : "hidden"}`}>
+          <div className={`${visible === "block" ? "block " : "hidden"}`}>
             <Button
               title="Book A Service"
+              center="mx-0"
               width={"lg:w-[182px] mx-0 w-[153px]"}
             />
           </div>
@@ -65,11 +67,9 @@ function Chooseus({
                     style={{
                       backgroundColor: "#F6F6F6",
                       border: "1px solid #F6B620",
-
-                      boxShadow: "0px 1px 10px 1px #D7D5D5",
                     }}
                     key={index}
-                    className="flex mt-5 shadow-xl lg:gap-5 gap-3 lg:p-[15px] p-[10px] rounded-lg lg:rounded-2xl"
+                    className="flex mt-5 shade lg:gap-5 gap-3 lg:p-[15px] p-[10px] rounded-lg lg:rounded-2xl"
                   >
                     <Image
                       src="/assets/small-circle.svg"

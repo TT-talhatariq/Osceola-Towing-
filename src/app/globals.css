@@ -42,3 +42,6 @@
     @apply bg-green-700 scale-110;
   }
 }
+html {
+  scroll-behavior: smooth;
+}

@@ -4,7 +4,7 @@ import Aboutus from "@/components/Aboutus";
 import Button from "@/components/Button";
 import Chooseus from "@/components/Chooseus";
 import HelpSection from "@/components/HelpSection";
-
+import Strip from "@/components/Strip";
 function Service() {
   return (
     <div>
@@ -29,6 +29,7 @@ function Service() {
         height={191}
         className="absolute lg:w-[191px] lg:hidden block lg:h-[191px] w-[60px] h-[200px] left-0 top-10"
       />
+      <Strip />
       <div className="text-center mb-20 lg:px-24 px-3 mx-auto ">
         <h1 className="lg:text-[52px]   text-[29px] font-bold">
           Reliable Towing & Roadside{" "}
@@ -103,7 +104,8 @@ function Service() {
 
           <Button
             title="Book A Service"
-            width={"lg:w-[182px] mb-10 mt-7  w-[153px]"}
+            center="mx-0"
+            width={"lg:w-[182px] mb-10  mt-7  w-[153px]"}
           />
         </div>
         <div className={`lg:w-[50%]`}>

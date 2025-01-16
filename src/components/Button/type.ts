@@ -5,4 +5,5 @@ export type ButtonProps = {
   textColor?: string;
   iconColor?: string;
   iconbg?: string;
+  center?: string;
 };

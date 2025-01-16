@@ -1,4 +1,4 @@
-import { FormDataType } from "@/components/Forms/type";
+import { FormDataType } from "@/components/Forms/ContactForm/type";
 export const EmailTemplate = ({ values }: { values: FormDataType }): string => {
   const {
     message = "Hello, I’m interested in your services.",

@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { ContactProps } from "./type";
-import Form from "@/components/Forms";
+import Form from "@/components/Forms/ContactForm";
 function Contactus({
   background = "bg-[#F6B620] bg-opacity-10",
 }: ContactProps) {
   return (
-    <div className={`${background} raleway mt-10 lg:p-28 p-5`}>
+    <div id="Contactus" className={`${background} raleway mt-10 lg:p-28 p-5`}>
       <div className="lg:flex gap-20 items-center">
         <div>
           <h1 className="lg:text-[22px] text-[18px] text-[#F6B620] font-medium">

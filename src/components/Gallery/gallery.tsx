@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
+import Link from "next/link";
 function Gallery() {
   return (
     <div>
@@ -27,9 +28,9 @@ function Gallery() {
             className="lg:w-[326px] lg:mx-0 mx-auto  lg:hidden block w-[200px]"
           />
         </div>
-        <div className="lg:block hidden">
+        <Link href="/gallery" className="lg:block hidden">
           <Button title="View All Our Gallery" width={"lg:w-[251px]"} />
-        </div>
+        </Link>
       </div>
       <div className="lg:flex items-center mt-20 px-5 lg:px-20">
         <Image

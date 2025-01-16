@@ -12,11 +12,12 @@ import Emergency from "@/components/Emergency";
 import ServiceData from "@/data/serviceCards.json";
 import Strip from "@/components/Strip";
 import Testimonals from "@/components/Testimonals";
+import Link from "next/link";
 function Homepage() {
   return (
     <>
       <div className="relative lg:mt-[200px] mt-[100px]">
-        <div className="lg:px-24 px-2 ">
+        <div className="lg:px-24 px-2 mb-32">
           <h1 className="text-center lg:text-[86px] text-[32px] font-bold">
             Reliable Truck Towing Services in Osceola County
           </h1>
@@ -44,10 +45,12 @@ function Homepage() {
             className="lg:hidden block"
             style={{ width: "100%" }}
           />
-          <p className="text-[#F6B620] raleway lg:text-[28px] px-6 text-[14px] lg:mb-[40px]  mb-[20px]  mt-5 text-center ">
+          <p className="text-[#F6B620] raleway lg:text-[28px] px-6 text-[14px] lg:mb-[40px]  mb-[20px]   lg:-mt-5 mt-5 text-center ">
             Available 24/7 to Get You Back on the Road Safely and Quickly.
           </p>
-          <Button title="Request a Tow Now" width="lg:w-[251px] w-[164px]" />
+          <Link href="#Contactus">
+            <Button title="Request a Tow Now" width="lg:w-[251px] w-[164px]" />
+          </Link>
         </div>
       </div>
       <Image

@@ -1,10 +1,10 @@
 {
   "NavigationLink": [
-    { "name": "Home", "link": "/services" },
-    { "name": "About Us", "link": "/light-medium" },
-    { "name": "Services", "link": "/heavy" },
+    { "name": "Home", "link": "/" },
+    { "name": "About Us", "link": "/about-us" },
+    { "name": "Services", "link": "/services" },
     { "name": "Gallery", "link": "/gallery" },
-    { "name": "Contact Us", "link": "/gallery" }
+    { "name": "Contact Us", "link": "/contact-us" }
   ],
   "SupportLink": [
     { "name": "Privacy Policy", "link": "/" },

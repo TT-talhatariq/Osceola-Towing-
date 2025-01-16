@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import imageData from "@/data/galleryImages.json";
+import Strip from "@/components/Strip";
 
 function Gallery() {
   return (
@@ -29,6 +30,7 @@ function Gallery() {
         height={191}
         className="absolute lg:w-[191px] lg:hidden block lg:h-[191px] w-[60px] h-[200px] left-0 top-10"
       />
+      <Strip />
       <div className="text-center lg:px-24 px-3 ">
         <h1 className="lg:text-[52px] lg:block hidden text-[29px] font-bold">
           Our Work in Action

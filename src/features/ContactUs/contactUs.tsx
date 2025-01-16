@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ContactUs from "@/components/ContactUs";
 import HelpSection from "@/components/HelpSection";
+import Strip from "@/components/Strip";
 
 function Contactus() {
   return (
@@ -27,7 +28,8 @@ function Contactus() {
         height={191}
         className="absolute lg:w-[191px] lg:hidden block lg:h-[191px] w-[60px] h-[200px] left-0 top-10"
       />
-      <div className="text-center lg:px-24 px-3 ">
+      <Strip />
+      <div className="text-center lg:px-24 px-3 mb-20">
         <h1 className="lg:text-[52px] lg:block hidden text-[29px] font-bold">
           Get In Touch!{" "}
         </h1>

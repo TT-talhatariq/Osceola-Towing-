@@ -11,7 +11,7 @@ function HelpSection({
   return (
     <div>
       <div
-        className={`${bgImage} bg-cover lg:h-[528px] h-[490px]  bg-center lg:pt-20 mt-10 pt-10 pb-10 text-white my-20 w-full raleway bg-no-repeat lg:w-[98%] m-5 rounded-3xl mx-auto`}
+        className={`${bgImage} bg-cover lg:h-[528px] h-[490px]  bg-center lg:pt-20 mt-10 pt-10 pb-10 text-white my-20 w-full raleway bg-no-repeat lg:w-[85%] m-5 rounded-3xl mx-auto`}
       >
         <div className="text-center lg:px-0 px-3">
           <h1 className="lg:text-[22px] text-[18px] text-white text-center font-medium">
