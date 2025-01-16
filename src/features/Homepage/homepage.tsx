@@ -11,6 +11,7 @@ import Button from "@/components/Button";
 import Emergency from "@/components/Emergency";
 import ServiceData from "@/data/serviceCards.json";
 import Strip from "@/components/Strip";
+import Testimonals from "@/components/Testimonals";
 function Homepage() {
   return (
     <>
@@ -79,6 +80,7 @@ function Homepage() {
         image="/assets/choose-image.svg"
         data={ChooseCard}
       />
+      <Testimonals />
       <Gallery />
       <Emergency
         image="/assets/priority-image.svg"

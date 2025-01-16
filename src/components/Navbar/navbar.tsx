@@ -61,13 +61,16 @@ function Navbar() {
         </div>
       </div>
       <div className="flex items-center lg:px-24 px-6 lg:py-5 py-3 bg-white raleway shadow-lg justify-between">
-        <Image
-          src="./assets/logo.svg"
-          alt="logo"
-          width={70}
-          height={14}
-          className="lg:w-[140px] lg:h-[68px]"
-        />
+        <Link href="/">
+          <Image
+            src="./assets/logo.svg"
+            alt="logo"
+            width={70}
+            height={14}
+            className="lg:w-[140px] lg:h-[68px]"
+          />
+        </Link>
+
         <ul className="flex items-center lg:gap-16   justify-between">
           {NavLink
             ? NavLink.map((item, index) => (

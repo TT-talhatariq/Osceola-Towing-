@@ -1,4 +1,4 @@
-import Homepage from "@/features/Homepage"
+import Homepage from "@/features/Homepage";
 function Home() {
   return (
     <>
