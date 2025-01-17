@@ -2,17 +2,28 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
+import { motion } from "framer-motion";
 function Gallery() {
   return (
     <div>
       <div className="flex raleway justify-between mt-32 items-center lg:px-24 px-5">
         <div>
-          <h1 className="lg:text-[22px] text-[12px] lg:text-start text-center  lg:text-[#096656] text-[#F6B620] font-medium">
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[22px] text-[12px] lg:text-start text-center  lg:text-[#096656] text-[#F6B620] font-medium"
+          >
             Our Gallery
-          </h1>
-          <h1 className="lg:text-[36px] text-[25px] lg:text-start text-center font-bold">
+          </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[36px] text-[25px] lg:text-start text-center font-bold"
+          >
             Our Tow Trucks In Action.
-          </h1>
+          </motion.h1>
           <Image
             src="/assets/green-vector.svg"
             alt="circle"
@@ -32,7 +43,12 @@ function Gallery() {
           <Button title="View All Our Gallery" width={"lg:w-[251px]"} />
         </Link>
       </div>
-      <div className="lg:flex items-center mt-20 px-5 lg:px-20">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
+        className="lg:flex items-center mt-20 px-5 lg:px-20"
+      >
         <Image
           src="/assets/gallery-image-one.svg"
           alt="circle"
@@ -51,8 +67,13 @@ function Gallery() {
           width={295}
           height={351}
         />
-      </div>
-      <div className="lg:flex items-center   px-5 lg:px-20">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
+        className="lg:flex items-center   px-5 lg:px-20"
+      >
         <Image
           src="/assets/gallery-image-four.svg"
           alt="circle"
@@ -71,7 +92,7 @@ function Gallery() {
           width={505}
           height={351}
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

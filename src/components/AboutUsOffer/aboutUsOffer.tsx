@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { OfferProps, Item } from "./type";
+import { motion } from "framer-motion";
 function AboutUsOffer({
   title,
   heading,
@@ -18,14 +19,22 @@ function AboutUsOffer({
         raleway bg-no-repeat w-full lg:px-24 lg:pt-32 pt-14 lg:pb-20 pb-5 `}
     >
       <div>
-        <h1 className={`text-[22px] ${titleColor} text-center  font-medium`}>
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className={`text-[22px] ${titleColor} text-center  font-medium`}
+        >
           {title}
-        </h1>
-        <h1
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
           className={`lg:text-[52px] ${headingColor} text-[32px] text-center font-bold`}
         >
           {heading}
-        </h1>
+        </motion.h1>
         <Image
           src="/assets/yellow-vector.svg"
           alt="circle"
@@ -38,7 +47,10 @@ function AboutUsOffer({
         {data
           ? data.map((item: Item, index: number) => {
               return (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7 }}
                   key={index}
                   className="lg:w-[370px] lg:mt-0 mt-5 lg:rounded-3xl shade rounded-xl lg:p-5 p-3 bg-white"
                 >
@@ -65,7 +77,7 @@ function AboutUsOffer({
                       {item.para}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               );
             })
           : "loading"}

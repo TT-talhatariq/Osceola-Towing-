@@ -14,29 +14,20 @@ import ServiceData from "@/data/serviceCards.json";
 import Strip from "@/components/Strip";
 import Testimonals from "@/components/Testimonals";
 import Link from "next/link";
-// import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { motion } from "framer-motion";
 function Homepage() {
-  const headingRef = useRef(null); // Create a reference to the DOM element
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && headingRef.current) {
-      gsap.fromTo(
-        headingRef.current, // Target the referenced DOM element
-        { opacity: 0, y: -50 }, // Initial state
-        { opacity: 1, y: 0, duration: 1, ease: "power1.out" }, // Animation to end state
-      );
-    }
-  }, []);
-
   return (
     <>
       <div className="relative lg:mt-[200px] mt-[100px]">
-        <div ref={headingRef} className="lg:px-24 px-2 mb-32">
-          <h1 className="text-center lg:text-[86px] text-[32px] font-bold">
+        <div className="lg:px-24 px-2 mb-32">
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="text-center lg:text-[86px] text-[32px] font-bold"
+          >
             Reliable Truck Towing Services in Osceola County
-          </h1>
+          </motion.h1>
           ;
           <Image
             src="/assets/yellow-vector.svg"

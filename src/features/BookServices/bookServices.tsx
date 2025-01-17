@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import AboutUsOffer from "@/components/AboutUsOffer";
@@ -5,6 +6,7 @@ import BookServiceCard from "@/data/bookServiceCard.json";
 import Aboutus from "@/components/Aboutus";
 import ContactUs from "@/components/ContactUs";
 import Strip from "@/components/Strip";
+import { motion } from "framer-motion";
 function BookServices() {
   return (
     <div>
@@ -34,9 +36,14 @@ function BookServices() {
       />
       <Strip />
       <div className="text-center lg:px-24 px-3 ">
-        <h1 className="lg:text-[52px] lg:block hidden text-[29px] font-bold">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="lg:text-[52px] lg:block hidden text-[29px] font-bold"
+        >
           Book a Service with Osceola Towing
-        </h1>
+        </motion.h1>
         <Image
           src="/assets/yellow-vector.svg"
           alt="circle"
@@ -45,12 +52,17 @@ function BookServices() {
           className="lg:w-[326px]  lg:block hidden  float-right mr-32  w-[200px]"
         />
 
-        <p className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5">
+        <motion.p
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
+        >
           Need towing or roadside assistance? Our team at Osceola Towing is
           ready to provide quick, reliable, and professional services tailored
           to your needs. Booking a service is simple and hassle-free—just follow
           the steps below!
-        </p>
+        </motion.p>
       </div>
       <AboutUsOffer
         data={BookServiceCard}

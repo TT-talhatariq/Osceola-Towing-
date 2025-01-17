@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import ContactUs from "@/components/ContactUs";
 import HelpSection from "@/components/HelpSection";
 import Strip from "@/components/Strip";
-
+import { motion } from "framer-motion";
 function Contactus() {
   return (
     <div>
@@ -30,9 +31,14 @@ function Contactus() {
       />
       <Strip />
       <div className="text-center lg:px-24 px-3 mb-20">
-        <h1 className="lg:text-[52px] lg:block hidden text-[29px] font-bold">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="lg:text-[52px] lg:block hidden text-[29px] font-bold"
+        >
           Get In Touch!{" "}
-        </h1>
+        </motion.h1>
         <Image
           src="/assets/yellow-vector.svg"
           alt="circle"
@@ -41,12 +47,17 @@ function Contactus() {
           className="lg:w-[326px] mx-auto lg:block hidden    w-[200px]"
         />
 
-        <p className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5">
+        <motion.p
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
+        >
           We’re here to help 24/7! Whether you need immediate roadside
           assistance, towing services, or have questions about what we offer,
           don’t hesitate to reach out. Our friendly team is ready to assist you
           anytime, anywhere.
-        </p>
+        </motion.p>
       </div>
       <ContactUs />
       <HelpSection

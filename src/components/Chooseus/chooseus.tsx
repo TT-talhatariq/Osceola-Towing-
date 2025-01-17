@@ -4,6 +4,8 @@ import Button from "@/components/Button";
 import { ChooseProps } from "./type";
 import { Item } from "./type";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 function Chooseus({
   title,
   image,
@@ -20,10 +22,22 @@ function Chooseus({
       {" "}
       <div className="raleway lg:flex items-center justify-between lg:pl-24  gap-10 mt-20">
         <div className="lg:px-0 px-5">
-          <h1 className="lg:text-[22px] text-[14px]  lg:w-[50%] text-[#F6B620] font-medium">
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[22px] text-[14px]  lg:w-[50%] text-[#F6B620] font-medium"
+          >
             {title}
-          </h1>
-          <h1 className="lg:text-[43px] text-[25px] font-bold">{heading}</h1>
+          </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[43px] text-[25px] font-bold"
+          >
+            {heading}
+          </motion.h1>
           <Image
             src="/assets/yellow-vector.svg"
             alt="circle"
@@ -31,14 +45,22 @@ function Chooseus({
             height={7}
             className="w-[326px] mx-auto"
           />
-          <h1 className="lg:text-[43px] mb-5  text-[25px] font-bold">
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[43px] mb-5  text-[25px] font-bold"
+          >
             {subHeading}
-          </h1>
-          <p
-            className={`lg:text-[17px] text-[#666666] lg:w-[600px] text-[14px] leading-[2]  lg:mb-5 mb-3`}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className={`lg:text-[17px]  text-[#666666] lg:w-[600px] text-[14px] leading-[2]  lg:mb-20 mb-3`}
           >
             {description}
-          </p>
+          </motion.p>
           {perfectForItems.length > 0 && (
             <div className="mb-5">
               <h2 className="text-lg lg:mb-5 mb-3 text-[#F6B620] font-bold">
@@ -63,10 +85,14 @@ function Chooseus({
               width={"lg:w-[182px] mx-0 w-[153px]"}
             />
           </Link>
+
           {data
             ? data.map((item: Item, index: number) => {
                 return (
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 2, x: 0 }}
+                    transition={{ duration: 0.7 }}
                     style={{
                       backgroundColor: "#F6F6F6",
                       border: "1px solid #F6B620",
@@ -90,7 +116,7 @@ function Chooseus({
                         {item.para}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })
             : ""}

@@ -4,6 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import Button from "@/components/Button";
 import { ServiceProps, Item } from "./type";
 import Link from "next/link";
+import { motion } from "framer-motion";
 function Services({
   backgroundImage,
   title,
@@ -16,16 +17,22 @@ function Services({
       className={`${backgroundImage} lg:mt-0 mt-10 raleway bg-cover lg:bg-no-repeat  lg:bg-center ${visible === "block" ? " lg:pt-[270px]  lg:h-[950px] lg:py-0 py-14" : "pt-20 pb-10"} w-full  `}
     >
       <div className=" lg:px-24 px-5 raleway ">
-        <h1
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
           className={`lg:text-[22px] ${visible === "block" ? "text-white" : "text-[#F6B620]"}  text-[14px] text-center font-medium`}
         >
           {title}
-        </h1>
-        <h1
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
           className={`text-center ${visible === "block" ? "text-white" : "text-black"} lg:text-[52px] text-[25px] font-bold`}
         >
           {heading}
-        </h1>
+        </motion.h1>
         <Image
           src="/assets/yellow-vector.svg"
           alt="circle"
@@ -33,7 +40,12 @@ function Services({
           height={7}
           className="lg:w-[439px]  mx-auto w-[200px]"
         />
-        <div className="flex flex-wrap items-center gap-5 justify-center lg:mt-20 mt-10 lg:mb-14 mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-wrap items-center gap-5 justify-center lg:mt-20 mt-10 lg:mb-14 mb-10"
+        >
           {data
             ? data.map((item: Item, index: number) => {
                 return (
@@ -64,7 +76,7 @@ function Services({
                 );
               })
             : "loading"}
-        </div>
+        </motion.div>
 
         <Link href="/services" className={`${visible}`}>
           <Button

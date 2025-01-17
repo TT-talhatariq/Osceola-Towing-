@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
 import { AboutusProps } from "./type";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 function Aboutus({
   serviceNumber,
   title,
@@ -19,7 +22,12 @@ function Aboutus({
     <div
       className={`flex ${background}  bg-cover bg-center bg-no-repeat lg:flex-row flex-col-reverse justify-between  lg:gap-10 lg:px-24 lg:pt-24 p-4 `}
     >
-      <div className={`lg:w-[50%]`}>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.9 }}
+        className={`lg:w-[50%]`}
+      >
         <div className="relative">
           <Image
             src={imageSrc1}
@@ -29,9 +37,12 @@ function Aboutus({
             className="w-full h-auto"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.9 }}
         className={`raleway mt-5 lg:w-[50%]
         text-start `}
       >
@@ -76,7 +87,7 @@ function Aboutus({
             width={"lg:w-[182px] mx-0 w-[153px]"}
           />
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Aboutus from "@/components/Aboutus";
@@ -7,6 +8,7 @@ import HelpSection from "@/components/HelpSection";
 import Strip from "@/components/Strip";
 import Link from "next/link";
 import Testimonals from "@/components/Testimonals";
+import { motion } from "framer-motion";
 function Service() {
   return (
     <div>
@@ -33,9 +35,14 @@ function Service() {
       />
       <Strip />
       <div className="text-center mb-20 lg:px-24 px-3 mx-auto ">
-        <h1 className="lg:text-[52px]   text-[29px] font-bold">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="lg:text-[52px]   text-[29px] font-bold"
+        >
           Reliable Towing & Roadside{" "}
-        </h1>
+        </motion.h1>
         <Image
           src="/assets/yellow-vector.svg"
           alt="circle"
@@ -43,16 +50,26 @@ function Service() {
           height={7}
           className="lg:w-[426px] lg:ml-56  w-[200px]"
         />
-        <h1 className="lg:text-[52px]   text-[29px] font-bold">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="lg:text-[52px]   text-[29px] font-bold"
+        >
           Assistance You Can Count On{" "}
-        </h1>
+        </motion.h1>
 
-        <p className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 ">
+        <motion.p
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 "
+        >
           At Osceola Towing, we provide a full range of towing and roadside
           assistance services designed to get you back on the road quickly and
           safely. Whether youre dealing with a breakdown, an accident, or a
           long-distance towing need, our team is here to help 24/7.
-        </p>
+        </motion.p>
       </div>
       <Aboutus
         serviceNumber="Service: 01"
@@ -69,38 +86,89 @@ function Service() {
 
       <div className=" relative flex lg:flex-row flex-col py-28 lg:gap-10 lg:px-24  p-4">
         <div>
-          <h1 className="lg:text-[22px] text-[14px]  lg:w-[50%] text-[#F6B620] font-medium">
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[22px] text-[14px]  lg:w-[50%] text-[#F6B620] font-medium"
+          >
             Service: 02{" "}
-          </h1>
-          <h1 className="lg:text-[43px] text-[25px] font-bold">
+          </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[43px] text-[25px] font-bold"
+          >
             Emergency Roadside{" "}
-          </h1>
+          </motion.h1>
           <Image
             src="/assets/yellow-vector.svg"
             alt="circle"
             width={300}
             height={7}
           />
-          <h1 className="lg:text-[43px] mb-2 text-[25px] font-bold">
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="lg:text-[43px] mb-2 text-[25px] font-bold"
+          >
             Assistance
-          </h1>
-          <p
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
             className={`text-[#666666]
         lg:text-[17px] text-[14px] leading-[2]   mb-3`}
           >
             Stranded on the road? We’ve got you covered with fast and reliable
             roadside assistance.{" "}
-          </p>
+          </motion.p>
 
           <div>
-            <h2 className="lg:text-[22px] text-[14px] mb-3 text-[#F6B620] ">
+            <motion.h2
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              className="lg:text-[22px] text-[14px] mb-3 text-[#F6B620] "
+            >
               Perfect For:
-            </h2>
+            </motion.h2>
             <ul className="list-disc pl-5 text-[#232323] space-y-2 ">
-              <li className="opacity-80">Battery jump-starts</li>
-              <li className="opacity-80">Flat tire changes</li>
-              <li className="opacity-80">Fuel delivery</li>
-              <li className="opacity-80">Lockout services</li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="opacity-80"
+              >
+                Battery jump-starts
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="opacity-80"
+              >
+                Flat tire changes
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="opacity-80"
+              >
+                Fuel delivery
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="opacity-80"
+              >
+                Lockout services
+              </motion.li>
             </ul>
           </div>
           <Link href="/book-services">

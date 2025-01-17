@@ -2,6 +2,8 @@ import React from "react";
 import PriorityCard from "@/data/priorityCard.json";
 import Image from "next/image";
 import { EmergencyProps } from "./type";
+import { motion } from "framer-motion";
+import Button from "@/components/Button";
 function Emergency({
   backgroundImage,
   image,
@@ -48,7 +50,10 @@ function Emergency({
           {PriorityCard
             ? PriorityCard.map((item, index) => {
                 return (
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.7 }}
                     style={{
                       backgroundColor: "#F6F6F6",
                       border: "1px solid #F6B620",
@@ -74,19 +79,14 @@ function Emergency({
                         {item.para}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })
             : "loading"}
-          <div className="flex items-center mt-10 gap-3 bg-[#096656] justify-center  text-white text-center rounded-full w-[182px] h-[53px]">
-            <button className="text-[18px] ">Learn More</button>
-            <Image
-              src="./assets/arrow-icon.svg"
-              alt="logo"
-              width={15}
-              height={15}
-            />
-          </div>
+
+          <br />
+          <br />
+          <Button title="Learn More" width="lg:w-[182px]" center="mx-0" />
         </div>
       </div>
     </div>

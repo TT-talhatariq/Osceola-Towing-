@@ -9,7 +9,7 @@ import { TiStarFullOutline } from "react-icons/ti";
 import Image from "next/image";
 import testimonials from "@/data/testimonalData.json";
 import { Testimonial, testimonalProps } from "./type";
-
+import { motion } from "framer-motion";
 function Testimonials({
   background,
   titleColor = "text-white",
@@ -21,16 +21,22 @@ function Testimonials({
   return (
     <section className={`${background} my-32 py-12  `}>
       <div className="mx-auto px-6">
-        <h1
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
           className={`lg:text-[22px] ${titleColor} text-[14px] text-center font-medium`}
         >
           Testimonials
-        </h1>
-        <h1
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
           className={`text-center ${heading} lg:text-[52px] text-[25px] font-bold`}
         >
           Our Satisfied Customers
-        </h1>
+        </motion.h1>
         <Image
           src="/assets/yellow-vector.svg"
           alt="circle"
