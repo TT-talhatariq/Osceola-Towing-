@@ -29,22 +29,20 @@ function ContactForm() {
   });
 
   const onSubmit: SubmitHandler<FormDataType> = async (data) => {
-    console.log("Payload sent to API:", data); // Log the payload
     const loadingToast = toast.loading("Sending message...");
     setIsLoading(true);
 
     try {
       const formPayload = new FormData();
       formPayload.append("email", process.env.NEXT_PUBLIC_CLIENT_EMAIL || "");
-      formPayload.append("subject", "New query from Contact Form");
+      formPayload.append("subject", "New query from Osceola Towing");
       formPayload.append("html", EmailTemplate({ values: data }));
-      const response = await fetch(process.env.NEXT_PUBLIC_API_URL || "", {
+      const response = await fetch(process.env.NEXT_PUBLIC_API_BASE_URL || "", {
         method: "POST",
         body: formPayload,
       });
 
       if (!response.ok) throw new Error("Failed to submit form");
-      console.log("resp", response);
       toast.dismiss(loadingToast);
       toast.success("Message sent successfully!");
       reset();

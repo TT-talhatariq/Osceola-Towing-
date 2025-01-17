@@ -3,6 +3,7 @@ export const EmailTemplate = ({ values }: { values: FormDataType }): string => {
   const {
     message = "Hello, I’m interested in your services.",
     email,
+    service,
     name,
     phone,
   } = values;
@@ -97,6 +98,7 @@ export const EmailTemplate = ({ values }: { values: FormDataType }): string => {
                 ${name ? `<p><strong>Name:</strong> ${name}</p>` : ""}
                 ${email ? `<p><strong>Email:</strong> ${email}</p>` : ""}
                 ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ""}
+                ${service ? `<p><strong>Service:</strong> ${service}</p>` : ""}
                 <p><strong>Message:</strong> ${message}</p>
                
               </div>
