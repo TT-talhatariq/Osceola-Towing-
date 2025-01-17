@@ -50,7 +50,8 @@ function AboutUsOffer({
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.7 }}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.5 }}
                   key={index}
                   className="lg:w-[370px] lg:mt-0 mt-5 lg:rounded-3xl shade rounded-xl lg:p-5 p-3 bg-white"
                 >

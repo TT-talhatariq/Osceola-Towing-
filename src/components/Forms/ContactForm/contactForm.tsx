@@ -8,7 +8,7 @@ import { FormDataType } from "./type";
 import { toast } from "sonner";
 import Image from "next/image";
 import { EmailTemplate } from "@/utils/emailTemplate";
-
+import { motion } from "framer-motion";
 const defaultValues: FormDataType = {
   name: "",
   email: "",
@@ -104,7 +104,11 @@ function ContactForm() {
           <p className="text-red-500">{errors.message.message}</p>
         )}
 
-        <div className="flex items-center gap-3 bg-[#096656] justify-center  text-white text-center rounded-full w-[182px] h-[53px]">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+          className="flex items-center gap-3 bg-[#096656] justify-center  text-white text-center rounded-full w-[182px] h-[53px]"
+        >
           <button className="text-[18px]" type="submit">
             {" "}
             {isLoading ? "Sending..." : "Submit Now"}
@@ -115,7 +119,7 @@ function ContactForm() {
             width={15}
             height={15}
           />
-        </div>
+        </motion.div>
       </form>
     </div>
   );

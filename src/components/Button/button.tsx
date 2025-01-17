@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import { ButtonProps } from "./type";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import { motion } from "framer-motion";
 function Button({
   title,
   width,
@@ -12,7 +13,7 @@ function Button({
   center = "lg:mx-auto",
 }: ButtonProps) {
   return (
-    <div>
+    <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
       <div
         className={`flex items-center lg:gap-3 gap-2 ${bgcolor} ${width} ${center} justify-center ${textColor} text-center rounded-full h-[35px] lg:h-[53px]`}
       >
@@ -23,7 +24,7 @@ function Button({
           <IoIosArrowRoundForward className={`${iconColor}`} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

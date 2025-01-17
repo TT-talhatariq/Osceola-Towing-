@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
@@ -9,17 +10,17 @@ function Gallery() {
       <div className="flex raleway justify-between mt-32 items-center lg:px-24 px-5">
         <div>
           <motion.h1
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            whileInView={{ y: 0 }}
+            initial={{ y: 100 }}
+            transition={{ duration: 0.5, delay: 0 }}
             className="lg:text-[22px] text-[12px] lg:text-start text-center  lg:text-[#096656] text-[#F6B620] font-medium"
           >
             Our Gallery
           </motion.h1>
           <motion.h1
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            whileInView={{ y: 0 }}
+            initial={{ y: 100 }}
+            transition={{ duration: 0.5, delay: 0 }}
             className="lg:text-[36px] text-[25px] lg:text-start text-center font-bold"
           >
             Our Tow Trucks In Action.
@@ -49,24 +50,30 @@ function Gallery() {
         transition={{ duration: 0.7 }}
         className="lg:flex items-center mt-20 px-5 lg:px-20"
       >
-        <Image
-          src="/assets/gallery-image-one.svg"
-          alt="circle"
-          width={505}
-          height={351}
-        />{" "}
-        <Image
-          src="/assets/gallery-image-two.svg"
-          alt="circle"
-          width={400}
-          height={351}
-        />{" "}
-        <Image
-          src="/assets/gallery-image-three.svg"
-          alt="circle"
-          width={295}
-          height={351}
-        />
+        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
+          <Image
+            src="/assets/gallery-image-one.svg"
+            alt="circle"
+            width={505}
+            height={351}
+          />{" "}
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
+          <Image
+            src="/assets/gallery-image-two.svg"
+            alt="circle"
+            width={400}
+            height={351}
+          />{" "}
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
+          <Image
+            src="/assets/gallery-image-three.svg"
+            alt="circle"
+            width={295}
+            height={351}
+          />
+        </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -74,24 +81,30 @@ function Gallery() {
         transition={{ duration: 0.7 }}
         className="lg:flex items-center   px-5 lg:px-20"
       >
-        <Image
-          src="/assets/gallery-image-four.svg"
-          alt="circle"
-          width={400}
-          height={351}
-        />{" "}
-        <Image
-          src="/assets/gallery-image-five.svg"
-          alt="circle"
-          width={295}
-          height={351}
-        />{" "}
-        <Image
-          src="/assets/gallery-image-six.svg"
-          alt="circle"
-          width={505}
-          height={351}
-        />
+        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
+          <Image
+            src="/assets/gallery-image-four.svg"
+            alt="circle"
+            width={400}
+            height={351}
+          />{" "}
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
+          <Image
+            src="/assets/gallery-image-five.svg"
+            alt="circle"
+            width={295}
+            height={351}
+          />{" "}
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
+          <Image
+            src="/assets/gallery-image-six.svg"
+            alt="circle"
+            width={505}
+            height={351}
+          />
+        </motion.div>
       </motion.div>
     </div>
   );

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Accordians from "@/components/Accordian";
+import Button from "@/components/Button";
 function Faq() {
   return (
     <>
@@ -26,24 +27,9 @@ function Faq() {
             <Accordians />
             <br />
             <br />
-            <div className="flex items-center   gap-3 bg-[#096656] justify-center mx-auto  text-white text-center rounded-full w-[182px] h-[53px]">
-              <button className="text-[18px] ">View All FAQs</button>
-              <Image
-                src="./assets/arrow-icon.svg"
-                alt="logo"
-                width={15}
-                height={15}
-                className=""
-              />
-            </div>
+
+            <Button title="View All FAQs" width="lg:w-[182px]" />
           </div>
-          {/* <Image
-        src="/assets/circle.svg"
-        alt="circle"
-        width={191}
-        height={191}
-        className="rotate-180 right-0 absolute top-0 "
-      /> */}
         </div>
       </div>
     </>

@@ -22,28 +22,34 @@ function Testimonials({
     <section className={`${background} my-32 py-12  `}>
       <div className="mx-auto px-6">
         <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          whileInView={{ y: 0 }}
+          initial={{ y: 100 }}
+          transition={{ duration: 0.5, delay: 0 }}
           className={`lg:text-[22px] ${titleColor} text-[14px] text-center font-medium`}
         >
           Testimonials
         </motion.h1>
         <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          whileInView={{ y: 0 }}
+          initial={{ y: 100 }}
+          transition={{ duration: 0.5, delay: 0 }}
           className={`text-center ${heading} lg:text-[52px] text-[25px] font-bold`}
         >
           Our Satisfied Customers
         </motion.h1>
-        <Image
-          src="/assets/yellow-vector.svg"
-          alt="circle"
-          width={439}
-          height={7}
-          className="lg:w-[439px] mb-20 mx-auto w-[200px]"
-        />
+        <motion.div
+          whileInView={{ y: 0 }}
+          initial={{ y: 100 }}
+          transition={{ duration: 0.5, delay: 0 }}
+        >
+          <Image
+            src="/assets/yellow-vector.svg"
+            alt="circle"
+            width={439}
+            height={7}
+            className="lg:w-[439px] mb-20 mx-auto w-[200px]"
+          />
+        </motion.div>
         <Swiper
           modules={[Navigation, Pagination]}
           pagination={{
