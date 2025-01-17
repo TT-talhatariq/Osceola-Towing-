@@ -3,7 +3,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import { ChooseProps } from "./type";
 import { Item } from "./type";
-
+import Link from "next/link";
 function Chooseus({
   title,
   image,
@@ -53,13 +53,16 @@ function Chooseus({
               </ul>
             </div>
           )}
-          <div className={`${visible === "block" ? "block " : "hidden"}`}>
+          <Link
+            href="/book-services"
+            className={`cursor-pointer ${visible === "block" ? "block " : "hidden"}`}
+          >
             <Button
               title="Book A Service"
               center="mx-0"
               width={"lg:w-[182px] mx-0 w-[153px]"}
             />
-          </div>
+          </Link>
           {data
             ? data.map((item: Item, index: number) => {
                 return (

@@ -5,6 +5,8 @@ import Button from "@/components/Button";
 import Chooseus from "@/components/Chooseus";
 import HelpSection from "@/components/HelpSection";
 import Strip from "@/components/Strip";
+import Link from "next/link";
+import Testimonals from "@/components/Testimonals";
 function Service() {
   return (
     <div>
@@ -101,12 +103,13 @@ function Service() {
               <li className="opacity-80">Lockout services</li>
             </ul>
           </div>
-
-          <Button
-            title="Book A Service"
-            center="mx-0"
-            width={"lg:w-[182px] mb-10  mt-7  w-[153px]"}
-          />
+          <Link href="/book-services">
+            <Button
+              title="Book A Service"
+              center="mx-0"
+              width={"lg:w-[182px] mb-10  mt-7  w-[153px]"}
+            />
+          </Link>
         </div>
         <div className={`lg:w-[50%]`}>
           <Image
@@ -144,6 +147,11 @@ function Service() {
         ulHeading="Perfect For:"
         visible="block"
       />
+      <Testimonals
+        background="lg:bg-[url('/assets/testiomonals-bg.svg')] bg-cover bg-center bg-no-repeat"
+        headingColor="text-[#096656]"
+      />
+
       <HelpSection
         bgImage="lg:bg-[url('/assets/help-black-bg.svg')] bg-[url('/assets/help-black-mobile-bg.svg')]"
         buttonPrimaryProps={{

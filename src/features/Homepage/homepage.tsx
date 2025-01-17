@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Aboutus from "@/components/Aboutus";
@@ -13,14 +14,30 @@ import ServiceData from "@/data/serviceCards.json";
 import Strip from "@/components/Strip";
 import Testimonals from "@/components/Testimonals";
 import Link from "next/link";
+// import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 function Homepage() {
+  const headingRef = useRef(null); // Create a reference to the DOM element
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && headingRef.current) {
+      gsap.fromTo(
+        headingRef.current, // Target the referenced DOM element
+        { opacity: 0, y: -50 }, // Initial state
+        { opacity: 1, y: 0, duration: 1, ease: "power1.out" }, // Animation to end state
+      );
+    }
+  }, []);
+
   return (
     <>
       <div className="relative lg:mt-[200px] mt-[100px]">
-        <div className="lg:px-24 px-2 mb-32">
+        <div ref={headingRef} className="lg:px-24 px-2 mb-32">
           <h1 className="text-center lg:text-[86px] text-[32px] font-bold">
             Reliable Truck Towing Services in Osceola County
           </h1>
+          ;
           <Image
             src="/assets/yellow-vector.svg"
             alt="circle"
@@ -83,7 +100,11 @@ function Homepage() {
         image="/assets/choose-image.svg"
         data={ChooseCard}
       />
-      <Testimonals />
+      <Testimonals
+        background="bg-[#F6B620] bg-opacity-10"
+        titleColor="text-[#FFC107]"
+        heading="text-black"
+      />
       <Gallery />
       <Emergency
         image="/assets/priority-image.svg"

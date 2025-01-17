@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
 import { HelpSectionProps } from "./type";
-
+import Link from "next/link";
 function HelpSection({
   bgImage,
   buttonPrimaryProps,
@@ -34,8 +34,12 @@ function HelpSection({
             here to get you back on the road quickly and safely.
           </p>
           <div className="flex items-center mt-10 justify-center lg:gap-5 gap-3">
-            <Button {...buttonPrimaryProps} />
-            <Button {...buttonSecondaryProps} />
+            <Link href="#Contactus" className="cursor-pointer">
+              <Button {...buttonPrimaryProps} />
+            </Link>
+            <a href="tel:715-755-3281" className="cursor-pointer">
+              <Button {...buttonSecondaryProps} />
+            </a>
           </div>
         </div>
       </div>

@@ -7,84 +7,28 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { TiStarFullOutline } from "react-icons/ti";
 import Image from "next/image";
+import testimonials from "@/data/testimonalData.json";
+import { Testimonial, testimonalProps } from "./type";
 
-// Define the testimonial type
-interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  feedback: string;
-  rating: number;
-  image: string;
-}
-
-const Testimonials: React.FC = () => {
+function Testimonials({
+  background,
+  titleColor = "text-white",
+  heading = "text-white",
+  headingColor = "text-[#232323]",
+}: testimonalProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: "John D.",
-      role: "Satisfied Customer",
-      feedback:
-        "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
-      rating: 5,
-      image: "/assets/person.svg",
-    },
-    {
-      id: 2,
-      name: "Kristin Watson",
-      role: "Satisfied Customer",
-      feedback:
-        "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
-      rating: 5,
-      image: "/assets/person.svg",
-    },
-    {
-      id: 3,
-      name: "Michael R.",
-      role: "Satisfied Customer",
-      feedback:
-        "Their services were quick and reliable. I will definitely recommend Osceola Towing to others!",
-      rating: 5,
-      image: "/assets/person.svg",
-    },
-    {
-      id: 4,
-      name: "John D.",
-      role: "Satisfied Customer",
-      feedback:
-        "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
-      rating: 5,
-      image: "/assets/person.svg",
-    },
-    {
-      id: 5,
-      name: "Kristin Watson",
-      role: "Satisfied Customer",
-      feedback:
-        "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
-      rating: 5,
-      image: "/assets/person.svg",
-    },
-    {
-      id: 6,
-      name: "Michael R.",
-      role: "Satisfied Customer",
-      feedback:
-        "Their services were quick and reliable. I will definitely recommend Osceola Towing to others!",
-      rating: 5,
-      image: "/assets/person.svg",
-    },
-  ];
-
   return (
-    <section className="bg-[#F6B620] bg-opacity-10 my-32 py-12">
+    <section className={`${background} my-32 py-12  `}>
       <div className="mx-auto px-6">
-        <h1 className="lg:text-[22px] text-[#F6B620] text-[14px] text-center font-medium">
+        <h1
+          className={`lg:text-[22px] ${titleColor} text-[14px] text-center font-medium`}
+        >
           Testimonials
         </h1>
-        <h1 className="text-center text-black lg:text-[52px] text-[25px] font-bold">
+        <h1
+          className={`text-center ${heading} lg:text-[52px] text-[25px] font-bold`}
+        >
           Our Satisfied Customers
         </h1>
         <Image
@@ -109,7 +53,7 @@ const Testimonials: React.FC = () => {
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           className="mySwiper"
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial: Testimonial, index) => (
             <SwiperSlide
               key={testimonial.id}
               className={`transform transition-all rounded-xl duration-300 ${
@@ -135,10 +79,10 @@ const Testimonials: React.FC = () => {
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="w-14 h-14 rounded-full mr-4"
+                      className="w-12 h-12 rounded-full mr-4"
                     />
                     <div>
-                      <p className="font-medium text-xl text-[#232323]">
+                      <p className={`font-medium text-xl ${headingColor}`}>
                         {testimonial.name}
                       </p>
                       <p className="text-[#666666] text-sm">
@@ -174,6 +118,6 @@ const Testimonials: React.FC = () => {
       `}</style>
     </section>
   );
-};
+}
 
 export default Testimonials;

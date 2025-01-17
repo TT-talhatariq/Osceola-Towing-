@@ -4,7 +4,7 @@ import AboutUsOffer from "@/components/AboutUsOffer";
 import BookServiceCard from "@/data/bookServiceCard.json";
 import Aboutus from "@/components/Aboutus";
 import ContactUs from "@/components/ContactUs";
-
+import Strip from "@/components/Strip";
 function BookServices() {
   return (
     <div>
@@ -32,6 +32,7 @@ function BookServices() {
         height={191}
         className="absolute lg:w-[191px] lg:hidden block lg:h-[191px] w-[60px] h-[200px] left-0 top-10"
       />
+      <Strip />
       <div className="text-center lg:px-24 px-3 ">
         <h1 className="lg:text-[52px] lg:block hidden text-[29px] font-bold">
           Book a Service with Osceola Towing
