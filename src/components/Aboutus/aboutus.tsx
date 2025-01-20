@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 import { AboutusProps } from "./type";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+import { grifter } from "@/app/layout";
 function Aboutus({
   serviceNumber,
   title,
@@ -20,13 +20,13 @@ function Aboutus({
 }: AboutusProps) {
   return (
     <div
-      className={`flex ${background}  bg-cover bg-center bg-no-repeat lg:flex-row flex-col-reverse justify-between  lg:gap-10 lg:px-24 lg:pt-24 p-4 `}
+      className={`flex ${background} items-center bg-cover bg-center bg-no-repeat lg:flex-row flex-col-reverse justify-between  lg:gap-5 lg:px-24 lg:pt-24 p-4 `}
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.9 }}
-        className={`lg:w-[50%]`}
+        className={`lg:w-[45%]`}
       >
         <div className="relative">
           <Image
@@ -43,13 +43,15 @@ function Aboutus({
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.9 }}
-        className={`raleway mt-5 lg:w-[50%]
+        className={`raleway  lg:w-[50%]
         text-start `}
       >
         <h1 className={`${textColor} lg:text-[22px]  text-[18px] font-medium`}>
           {serviceNumber}
         </h1>
-        <h1 className={`lg:text-[42px] ${listColor} text-[28px] font-bold`}>
+        <h1
+          className={`lg:text-[42px] ${grifter.className}  w-96 ${listColor} text-[28px] font-bold`}
+        >
           {title}
         </h1>
         <Image
@@ -57,11 +59,11 @@ function Aboutus({
           alt="circle"
           width={511}
           height={12}
-          className=" lg:w-[211px] w-[200px]  lg:mx-auto "
+          className=" lg:w-[311px] w-[200px]   "
         />
         <p
           className={`text-[#666666]
-           lg:text-[17px] text-[14px] leading-[2]  lg:mb-5 mb-3`}
+           lg:text-[17px] text-[14px] leading-[2]  lg:mb-10 mb-3`}
         >
           {description}
         </p>

@@ -15,6 +15,7 @@ import Strip from "@/components/Strip";
 import Testimonals from "@/components/Testimonals";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function Homepage() {
   return (
     <>
@@ -24,17 +25,17 @@ function Homepage() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-center lg:text-[86px] text-[32px] font-bold"
+            className={`text-center text-[#232323] lg:text-[86px] ${grifter.className} leading-tight text-[32px] font-bold`}
           >
             Reliable Truck Towing Services in Osceola County
           </motion.h1>
-          ;
+
           <Image
             src="/assets/yellow-vector.svg"
             alt="circle"
             width={511}
             height={12}
-            className="lg:right-[130px] lg:w-[511px] w-[250px]  right-0 mx-auto absolute"
+            className="lg:right-[130px] lg:w-[711px] w-[250px]  right-0 mx-auto absolute"
           />
           <br />
           <Image

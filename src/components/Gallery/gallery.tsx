@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function Gallery() {
   return (
     <div>
@@ -21,7 +22,7 @@ function Gallery() {
             whileInView={{ y: 0 }}
             initial={{ y: 100 }}
             transition={{ duration: 0.5, delay: 0 }}
-            className="lg:text-[36px] text-[25px] lg:text-start text-center font-bold"
+            className={`lg:text-[36px] ${grifter.className} text-[25px] lg:text-start text-center font-bold`}
           >
             Our Tow Trucks In Action.
           </motion.h1>
@@ -48,7 +49,7 @@ function Gallery() {
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
-        className="lg:flex items-center mt-20 px-5 lg:px-20"
+        className="lg:flex items-center justify-center mt-20 px-5"
       >
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
           <Image
@@ -56,6 +57,7 @@ function Gallery() {
             alt="circle"
             width={505}
             height={351}
+            className="w-auto h-auto"
           />{" "}
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
@@ -64,6 +66,7 @@ function Gallery() {
             alt="circle"
             width={400}
             height={351}
+            className="w-auto h-auto"
           />{" "}
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
@@ -72,6 +75,7 @@ function Gallery() {
             alt="circle"
             width={295}
             height={351}
+            className="w-auto h-auto"
           />
         </motion.div>
       </motion.div>
@@ -79,7 +83,7 @@ function Gallery() {
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
-        className="lg:flex items-center   px-5 lg:px-20"
+        className="lg:flex items-center justify-center  px-5 "
       >
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
           <Image
@@ -87,6 +91,7 @@ function Gallery() {
             alt="circle"
             width={400}
             height={351}
+            className="w-auto h-auto"
           />{" "}
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
@@ -95,6 +100,7 @@ function Gallery() {
             alt="circle"
             width={295}
             height={351}
+            className="w-auto h-auto"
           />{" "}
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
@@ -103,6 +109,7 @@ function Gallery() {
             alt="circle"
             width={505}
             height={351}
+            className="w-auto h-auto"
           />
         </motion.div>
       </motion.div>

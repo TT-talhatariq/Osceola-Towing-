@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { OfferProps, Item } from "./type";
 import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function AboutUsOffer({
   title,
   heading,
@@ -31,7 +32,7 @@ function AboutUsOffer({
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className={`lg:text-[52px] ${headingColor} text-[32px] text-center font-bold`}
+          className={`lg:text-[52px] ${headingColor} ${grifter.className} text-[32px] text-center font-bold`}
         >
           {heading}
         </motion.h1>

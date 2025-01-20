@@ -2,7 +2,6 @@
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { useState } from "react";
-
 function Accordions() {
   const [openItem, setOpenItem] = useState<number | null>(null);
 

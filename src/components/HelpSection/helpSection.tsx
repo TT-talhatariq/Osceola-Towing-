@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
 import { HelpSectionProps } from "./type";
+import { grifter } from "@/app/layout";
 import Link from "next/link";
 function HelpSection({
   bgImage,
@@ -17,7 +18,9 @@ function HelpSection({
           <h1 className="lg:text-[22px] text-[18px] text-white text-center font-medium">
             Contact Us Today!{" "}
           </h1>
-          <h1 className="lg:text-[52px] lg:w-[750px] mx-auto text-white text-[26px] text-center font-bold">
+          <h1
+            className={`lg:text-[52px] lg:w-[750px] ${grifter.className} mx-auto text-white text-[26px] text-center font-bold`}
+          >
             Need Help Now? We’ve Got You Covered!{" "}
           </h1>
           <Image

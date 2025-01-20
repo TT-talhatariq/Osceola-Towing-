@@ -14,12 +14,15 @@ import HelpSection from "@/components/HelpSection";
 import AboutUsOffer from "@/components/AboutUsOffer";
 import Strip from "@/components/Strip";
 import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function AboutUs() {
   return (
     <div>
       <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center  lg:h-screen h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full lg:py-0 py-14 ">
         <div>
-          <h1 className="text-center lg:text-[100px] text-[32px] font-bold">
+          <h1
+            className={`text-center lg:text-[100px] ${grifter.className} text-[32px] font-bold`}
+          >
             About Us{" "}
           </h1>
           <Image
@@ -44,7 +47,7 @@ function AboutUs() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:text-[52px] lg:block hidden text-[29px] font-bold"
+          className={`lg:text-[52px] ${grifter.className} lg:block hidden text-[29px] font-bold`}
         >
           Your Trusted Towing Partner in
         </motion.h1>
@@ -59,7 +62,7 @@ function AboutUs() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:text-[52px]  lg:block hidden text-[29px] font-bold"
+          className={`lg:text-[52px] ${grifter.className} lg:block hidden text-[29px] font-bold`}
         >
           Osceola County{" "}
         </motion.h1>
@@ -67,7 +70,7 @@ function AboutUs() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:text-[52px] lg:hidden block text-[29px] font-bold"
+          className={`lg:text-[52px] ${grifter.className} lg:hidden block text-[29px] font-bold`}
         >
           Your Trusted Towing
         </motion.h1>
@@ -82,7 +85,7 @@ function AboutUs() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:text-[52px] text-[29px] lg:hidden block  font-bold"
+          className={`lg:text-[52px] ${grifter.className} text-[29px] lg:hidden block  font-bold`}
         >
           Partner in Osceola County{" "}
         </motion.h1>
@@ -90,7 +93,7 @@ function AboutUs() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
+          className="leading-[2] text-[#666666] raleway lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
         >
           At Osceola Towing, we are more than just a towing company – we are a
           team of dedicated professionals committed to providing top-notch
@@ -110,18 +113,18 @@ function AboutUs() {
           <Image
             src="/assets/mission-image.svg"
             alt="circle"
-            width={570}
+            width={670}
             height={548}
-            className="lg:w-[570px] lg:h-[548px]"
+            className="lg:w-auto lg:h-[548px]"
           />
         </motion.div>
-        <div className="lg:w-[50%]">
+        <div className="lg:w-[60%]">
           {" "}
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:text-[52px] text-[32px] font-bold"
+            className={`lg:text-[52px] ${grifter.className} text-[32px] font-bold`}
           >
             Our Mission{" "}
           </motion.h1>
@@ -136,7 +139,7 @@ function AboutUs() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:leading-[2] text-[#666666] lg:text-[18px] text-[12px] mt-2 "
+            className="lg:leading-[2] raleway text-[#666666] lg:text-[18px] text-[12px] mt-2 "
           >
             To deliver reliable, fast, and safe towing and roadside assistance
             services with unmatched customer care, ensuring every driver feels
@@ -146,7 +149,7 @@ function AboutUs() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className=" lg:text-[32px] text-[20px] font-bold mt-5"
+            className={` lg:text-[32px] ${grifter.className} text-[20px] font-bold mt-5`}
           >
             Our Values{" "}
           </motion.h1>
@@ -169,7 +172,7 @@ function AboutUs() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
-                        className="text-[#F6B620] lg:text-[22px] text-[16px] font-bold"
+                        className="text-[#F6B620] raleway lg:text-[22px] text-[16px] font-bold"
                       >
                         {item.heading}
                       </motion.h1>
@@ -178,7 +181,7 @@ function AboutUs() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
-                        className="text-[#666666] lg:text-[18px] mt-2 text-[10px]"
+                        className="text-[#666666] raleway lg:text-[18px] mt-2 text-[10px]"
                       >
                         {item.para}
                       </motion.p>

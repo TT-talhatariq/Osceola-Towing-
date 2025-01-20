@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ContactProps } from "./type";
 import Form from "@/components/Forms/ContactForm";
+import { grifter } from "@/app/layout";
 function Contactus({
   background = "bg-[#F6B620] bg-opacity-10",
 }: ContactProps) {
@@ -12,7 +13,9 @@ function Contactus({
           <h1 className="lg:text-[22px] text-[18px] text-[#F6B620] font-medium">
             Contact Us
           </h1>
-          <h1 className="lg:text-[52px] text-[28px] font-bold">
+          <h1
+            className={`lg:text-[52px] ${grifter.className} text-[28px] font-bold`}
+          >
             Need Assistance?{" "}
           </h1>
           <Image
@@ -21,7 +24,9 @@ function Contactus({
             width={326}
             height={7}
           />
-          <h1 className="mb-10 lg:text-[52px] text-[28px] font-bold">
+          <h1
+            className={`mb-10   ${grifter.className} $ lg:text-[52px] text-[28px] font-bold`}
+          >
             Contact Us Now!
           </h1>
           <Form />

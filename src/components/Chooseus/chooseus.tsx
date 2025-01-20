@@ -5,7 +5,7 @@ import { ChooseProps } from "./type";
 import { Item } from "./type";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+import { grifter } from "@/app/layout";
 function Chooseus({
   title,
   image,
@@ -34,7 +34,7 @@ function Chooseus({
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:text-[43px] text-[25px] font-bold"
+            className={`lg:text-[43px] ${grifter.className} text-[25px] font-bold `}
           >
             {heading}
           </motion.h1>
@@ -43,13 +43,13 @@ function Chooseus({
             alt="circle"
             width={326}
             height={7}
-            className="w-[326px] mx-auto"
+            className="w-[300px] ml-32 "
           />
           <motion.h1
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:text-[43px] mb-5  text-[25px] font-bold"
+            className="lg:text-[43px] text-[25px] font-bold"
           >
             {subHeading}
           </motion.h1>
@@ -57,7 +57,7 @@ function Chooseus({
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className={`lg:text-[17px]  text-[#666666] lg:w-[600px] text-[14px] leading-[2]  lg:mb-20 mb-3`}
+            className={`lg:text-[17px]  text-[#666666] lg:w-[600px] text-[14px] leading-[2]  lg:mb-10  mb-3`}
           >
             {description}
           </motion.p>

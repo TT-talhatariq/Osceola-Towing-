@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import imageData from "@/data/galleryImages.json";
 import Strip from "@/components/Strip";
-
+import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function Gallery() {
   return (
     <div>
@@ -11,7 +13,9 @@ function Gallery() {
         className={`lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center  lg:h-screen h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full lg:py-0 py-14 `}
       >
         <div>
-          <h1 className="text-center lg:text-[100px] text-[32px] font-bold">
+          <h1
+            className={`text-center lg:text-[100px] ${grifter.className} text-[32px] font-bold`}
+          >
             Our Gallery{" "}
           </h1>
           <Image
@@ -32,9 +36,14 @@ function Gallery() {
       />
       <Strip />
       <div className="text-center lg:px-24 px-3 ">
-        <h1 className="lg:text-[52px] lg:block hidden text-[29px] font-bold">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className={`lg:text-[52px] lg:block hidden ${grifter.className} text-[29px] font-bold`}
+        >
           Our Work in Action
-        </h1>
+        </motion.h1>
         <Image
           src="/assets/yellow-vector.svg"
           alt="circle"
@@ -43,15 +52,20 @@ function Gallery() {
           className="lg:w-[326px]  lg:block hidden mx-auto w-[200px]"
         />
 
-        <p className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5">
+        <motion.p
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="leading-[2] raleway text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
+        >
           At Osceola Towing, we take pride in the work we do and the service we
           provide. Browse through our gallery to see our fleet in action,
           including successful towing jobs, roadside assistance services, and
           behind-the-scenes moments. From emergency tows to long-distance
           transportation, we’ve got you covered.
-        </p>
+        </motion.p>
       </div>
-      <div className="flex flex-wrap mt-10  ">
+      <div className="flex flex-wrap mt-10 lg:px-20 justify-center ">
         {imageData.map((image, index) => (
           <div
             key={index}
@@ -60,8 +74,8 @@ function Gallery() {
             <Image
               src={image.images}
               alt="images"
-              width={300}
-              height={200}
+              width={100}
+              height={100}
               className=" rounded-lg w-[100%] h-[100%]"
             />
           </div>

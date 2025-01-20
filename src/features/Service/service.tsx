@@ -9,12 +9,15 @@ import Strip from "@/components/Strip";
 import Link from "next/link";
 import Testimonals from "@/components/Testimonals";
 import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function Service() {
   return (
     <div>
       <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover  flex flex-col justify-center items-center  lg:h-screen h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full lg:py-0 py-14 ">
         <div>
-          <h1 className="text-center lg:text-[100px] text-[32px] font-bold">
+          <h1
+            className={`text-center ${grifter.className} lg:text-[100px] text-[32px] font-bold`}
+          >
             Our Services{" "}
           </h1>
           <Image
@@ -39,7 +42,7 @@ function Service() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:text-[52px]   text-[29px] font-bold"
+          className={`lg:text-[52px]  ${grifter.className} text-[29px] font-bold`}
         >
           Reliable Towing & Roadside{" "}
         </motion.h1>
@@ -48,13 +51,13 @@ function Service() {
           alt="circle"
           width={326}
           height={7}
-          className="lg:w-[426px] lg:ml-56  w-[200px]"
+          className={`lg:w-[426px] lg:ml-56  ${grifter.className}  w-[200px]`}
         />
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:text-[52px]   text-[29px] font-bold"
+          className={`lg:text-[52px]   ${grifter.className}  text-[29px] font-bold`}
         >
           Assistance You Can Count On{" "}
         </motion.h1>
@@ -90,7 +93,7 @@ function Service() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:text-[22px] text-[14px]  lg:w-[50%] text-[#F6B620] font-medium"
+            className={`lg:text-[22px]  text-[14px]  lg:w-[50%] text-[#F6B620] font-medium`}
           >
             Service: 02{" "}
           </motion.h1>
@@ -98,7 +101,7 @@ function Service() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:text-[43px] text-[25px] font-bold"
+            className={`lg:text-[43px] ${grifter.className} text-[25px] font-bold`}
           >
             Emergency Roadside{" "}
           </motion.h1>
@@ -112,7 +115,7 @@ function Service() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:text-[43px] mb-2 text-[25px] font-bold"
+            className={`lg:text-[43px] ${grifter.className} mb-2 text-[25px] font-bold`}
           >
             Assistance
           </motion.h1>
@@ -121,7 +124,7 @@ function Service() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             className={`text-[#666666]
-        lg:text-[17px] text-[14px] leading-[2]   mb-3`}
+        lg:text-[17px] text-[14px] leading-[2] raleway  mb-3`}
           >
             Stranded on the road? We’ve got you covered with fast and reliable
             roadside assistance.{" "}
@@ -132,11 +135,11 @@ function Service() {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
-              className="lg:text-[22px] text-[14px] mb-3 text-[#F6B620] "
+              className="lg:text-[22px] text-[14px]  raleway mb-3 text-[#F6B620] "
             >
               Perfect For:
             </motion.h2>
-            <ul className="list-disc pl-5 text-[#232323] space-y-2 ">
+            <ul className="list-disc pl-5 text-[#232323] raleway space-y-2 ">
               <motion.li
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}

@@ -9,10 +9,13 @@ import Link from "next/link";
 import NavLink from "@/data/navLinks.json";
 import { RxCross2 } from "react-icons/rx";
 import Button from "@/components/Button";
+import { usePathname } from "next/navigation";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toogleOpen = () => setIsOpen(true);
   const toogleClose = () => setIsOpen(false);
+  const pathname = usePathname();
 
   return (
     <div className="z-20 fixed right-0 top-0 left-0">
@@ -70,14 +73,17 @@ function Navbar() {
             className="lg:w-[140px] lg:h-[68px]"
           />
         </Link>
-
-        <ul className="flex items-center lg:gap-16   justify-between">
+        <ul className="flex items-center lg:gap-16 justify-between">
           {NavLink
             ? NavLink.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.url}
-                    className="text-[#666666] lg:block hidden hover:text-[#F6B620] font-normal text-[18px]"
+                    className={`lg:block hidden font-normal text-[18px] ${
+                      pathname === item.url
+                        ? "text-yellow-500" // Active link styling
+                        : "text-[#666666]"
+                    } hover:text-[#F6B620]`}
                   >
                     {item.name}
                   </Link>
@@ -85,27 +91,30 @@ function Navbar() {
               ))
             : "loading"}
         </ul>
+
         <div className="lg:block hidden">
           <Button title="Get started" width={"lg:w-[182px]"} />
         </div>
+
         <div className="lg:hidden block cursor-pointer" onClick={toogleOpen}>
           <Image
             src="./assets/menu-icon.svg"
-            alt="logo"
+            alt="menu"
             width={20}
             height={15}
           />
         </div>
       </div>
       {isOpen && (
-        <div className="flex rounded-2xl p-5 justify-between bg-white shadow-2xl absolute top-4 w-40 right-5 ">
-          <ul className="justify-between  flex flex-col space-y-3 ">
+        <div className="flex rounded-2xl p-5 justify-between bg-white shadow-2xl absolute top-4 w-40 right-5">
+          <ul className="justify-between flex flex-col space-y-3">
             {NavLink
               ? NavLink.map((item, index) => (
                   <li key={index}>
                     <Link
                       href={item.url}
-                      className="text-[#666666]  hover:text-[#F6B620] font-normal text-[16px]"
+                      className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]"
+                      onClick={() => toogleClose()} // Close dropdown on navigation
                     >
                       {item.name}
                     </Link>

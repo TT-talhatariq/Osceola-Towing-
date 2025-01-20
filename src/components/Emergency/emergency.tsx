@@ -4,6 +4,7 @@ import Image from "next/image";
 import { EmergencyProps } from "./type";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
+import { grifter } from "@/app/layout";
 function Emergency({
   backgroundImage,
   image,
@@ -31,7 +32,7 @@ function Emergency({
             Emergency Assistance Section:{" "}
           </h1>
           <h1
-            className={`${textColor2} raleway lg:text-[52px] text-[30px] font-bold`}
+            className={`${textColor2} ${grifter.className}  lg:text-[52px] text-[30px] font-bold`}
           >
             Your Emergency is{" "}
           </h1>
@@ -40,9 +41,10 @@ function Emergency({
             alt="circle"
             width={326}
             height={7}
+            className="ml-32"
           />
           <h1
-            className={`${textColor2} raleway lg:text-[52px] text-[30px] font-bold`}
+            className={`${textColor2} ${grifter.className}  lg:text-[52px] text-[30px] font-bold`}
           >
             Our Priority
           </h1>

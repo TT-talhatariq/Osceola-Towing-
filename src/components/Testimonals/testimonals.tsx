@@ -10,6 +10,7 @@ import Image from "next/image";
 import testimonials from "@/data/testimonalData.json";
 import { Testimonial, testimonalProps } from "./type";
 import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function Testimonials({
   background,
   titleColor = "text-white",
@@ -33,7 +34,7 @@ function Testimonials({
           whileInView={{ y: 0 }}
           initial={{ y: 100 }}
           transition={{ duration: 0.5, delay: 0 }}
-          className={`text-center ${heading} lg:text-[52px] text-[25px] font-bold`}
+          className={`text-center ${heading}  ${grifter.className} text-[#232323] lg:text-[52px] text-[25px] font-bold`}
         >
           Our Satisfied Customers
         </motion.h1>
@@ -83,7 +84,7 @@ function Testimonials({
                     />
                   ))}
                 </div>
-                <p className="text-[#666666] leading-[2] text-[15px] mb-4">
+                <p className="text-[#666666] raleway leading-[2] text-[15px] mb-4">
                   {testimonial.feedback}
                 </p>
                 <div className="flex items-center justify-between">

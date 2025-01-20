@@ -5,12 +5,15 @@ import ContactUs from "@/components/ContactUs";
 import HelpSection from "@/components/HelpSection";
 import Strip from "@/components/Strip";
 import { motion } from "framer-motion";
+import { grifter } from "@/app/layout";
 function Contactus() {
   return (
     <div>
       <div className="lg:bg-[url('/assets/aboutus-bg.svg')]  flex flex-col justify-center items-center  lg:h-screen h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full lg:py-0 py-14 ">
         <div>
-          <h1 className="text-center lg:text-[100px] text-[32px] font-bold">
+          <h1
+            className={`text-center ${grifter.className} lg:text-[100px] text-[32px] font-bold`}
+          >
             Contact Us{" "}
           </h1>
           <Image
@@ -35,7 +38,7 @@ function Contactus() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:text-[52px] lg:block hidden text-[29px] font-bold"
+          className={`lg:text-[52px] ${grifter.className} lg:block hidden text-[29px] font-bold`}
         >
           Get In Touch!{" "}
         </motion.h1>
@@ -51,7 +54,7 @@ function Contactus() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
+          className="leading-[2] text-[#666666] raleway lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
         >
           We’re here to help 24/7! Whether you need immediate roadside
           assistance, towing services, or have questions about what we offer,
