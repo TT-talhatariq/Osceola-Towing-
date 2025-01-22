@@ -1,0 +1,22 @@
+[
+  {
+    "images": "/assets/service-card-image-one.svg",
+    "heading": "Heavy-Duty Towing",
+    "para": "Safe towing for trucks, buses, and larger vehicles."
+  },
+  {
+    "images": "/assets/service-card-image-two.svg",
+    "heading": "Emergency Roadside ",
+    "para": "Flat tires, battery jump-starts, and lockouts."
+  },
+  {
+    "images": "/assets/service-card-image-three.svg",
+    "heading": "Long-Distance Towing",
+    "para": "Affordable options for interstate towing needs."
+  },
+  {
+    "images": "/assets/service-card-image-four.svg",
+    "heading": "Accident Recovery",
+    "para": "Reliable recovery for vehicles involved in accidents."
+  }
+]

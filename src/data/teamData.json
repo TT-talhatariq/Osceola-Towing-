@@ -1,0 +1,22 @@
+[
+  {
+    "images": "/assets/team-member-one.svg",
+    "heading": "John Smith",
+    "para": "Founder & CEO"
+  },
+  {
+    "images": "/assets/team-member-two.svg",
+    "heading": "Sarah Johnson",
+    "para": "Operations Manager"
+  },
+  {
+    "images": "/assets/team-member-three.svg",
+    "heading": "Mike Davis",
+    "para": "Lead Tow Truck Operator"
+  },
+  {
+    "images": "/assets/team-member-four.svg",
+    "heading": "Lisa Martin",
+    "para": "Customer Service Specialist"
+  }
+]

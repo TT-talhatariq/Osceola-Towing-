@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01",
+    "icon": "/assets/about-yellow-vector.svg",
+    "heading": "Enter Your Details",
+    "para": "Provide your name, contact information, and vehicle details. The more information you provide.."
+  },
+  {
+    "id": "02",
+    "icon": "/assets/about-yellow-vector2.svg",
+    "heading": "Select Your Service",
+    "para": "Choose the type of service you need—whether it’s towing, roadside assistance, or accident recovery.."
+  },
+  {
+    "id": "03",
+    "icon": "/assets/about-yellow-vector3.svg",
+    "heading": "Confirm & Book",
+    "para": "Once you’ve confirmed your details, click Book Now, and our team will be on their way!"
+  }
+]
