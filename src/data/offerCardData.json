@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01",
+    "icon": "/assets/about-green-vector.svg",
+    "heading": "Comprehensive Towing Services:",
+    "para": "Heavy-duty towing, long-distance towing, accident recovery, and more."
+  },
+  {
+    "id": "02",
+    "icon": "/assets/about-green-vector2.svg",
+    "heading": "Roadside Assistance:",
+    "para": "Jump-starts, flat tire changes, fuel delivery, and lockout services."
+  },
+  {
+    "id": "03",
+    "icon": "/assets/about-green-vector3.svg",
+    "heading": "Fast Response Times:",
+    "para": "Minimizing your wait time when it matters most."
+  }
+]

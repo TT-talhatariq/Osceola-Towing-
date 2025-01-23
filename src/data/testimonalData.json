@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "John D.",
+    "role": "Satisfied Customer",
+    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "rating": 5,
+    "image": "/assets/person.svg"
+  },
+  {
+    "id": 2,
+    "name": "Kristin Watson",
+    "role": "Satisfied Customer",
+    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "rating": 5,
+    "image": "/assets/person.svg"
+  },
+  {
+    "id": 3,
+    "name": "Michael R.",
+    "role": "Satisfied Customer",
+    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "rating": 5,
+    "image": "/assets/person.svg"
+  },
+  {
+    "id": 4,
+    "name": "John D.",
+    "role": "Satisfied Customer",
+    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "rating": 5,
+    "image": "/assets/person.svg"
+  },
+  {
+    "id": 5,
+    "name": "Kristin Watson",
+    "role": "Satisfied Customer",
+    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "rating": 5,
+    "image": "/assets/person.svg"
+  },
+  {
+    "id": 6,
+    "name": "Michael R.",
+    "role": "Satisfied Customer",
+    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "rating": 5,
+    "image": "/assets/person.svg"
+  }
+]
