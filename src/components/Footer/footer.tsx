@@ -8,7 +8,7 @@ import FooterLinksJson from "@/data/footerLinks.json";
 import RenderSection from "@/components/Footer/renderFooterLinks";
 import Link from "next/link";
 function Footer() {
-  const { NavigationLink, SupportLink } = FooterLinksJson;
+  const { NavigationLinks, SupportLinks } = FooterLinksJson;
 
   return (
     <>
@@ -24,7 +24,7 @@ function Footer() {
             />
           </Link>
 
-          <p className="lg:text-[18px]  text-[11px] text-[#666666] mb-3 mt-5 lg:w-80">
+          <p className="lg:text-[18px]  text-[14px] text-[#666666] mb-3 mt-5 lg:w-80">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             tincidunt ex non pretium scelerisque. Sed dapibus nulla sit amet
             libero eleifend, in tempus felis interdum.
@@ -53,8 +53,13 @@ function Footer() {
           </div>
         </div>
 
-        <RenderSection title="Navigation Link" items={NavigationLink} />
-        <RenderSection title="Support Link" items={SupportLink} />
+        <RenderSection title="Navigation Links" items={NavigationLinks} />
+        <RenderSection title="Support Links" items={SupportLinks} />
+      </div>
+      <div>
+        <h1 className="lg:text-[20px] text-[9px] text-white raleway bg-[#232323] text-center p-3">
+          copy right by Osceola Towing Website Design. All Right Reserved
+        </h1>
       </div>
     </>
   );

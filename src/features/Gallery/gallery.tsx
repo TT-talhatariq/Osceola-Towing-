@@ -56,7 +56,7 @@ function Gallery() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="leading-[2] raleway text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
+          className="leading-[2] raleway text-[#666666] lg:text-[18px] text-[14px] lg:mb-0 mb-10 lg:mt-10 mt-5"
         >
           At Osceola Towing, we take pride in the work we do and the service we
           provide. Browse through our gallery to see our fleet in action,

@@ -7,7 +7,7 @@ function Strip() {
   return (
     <div className={`lg:mb-32 mb-20 ${grifter.className} `}>
       <div
-        className={`overflow-hidden w-full lg:h-[100px] h-[60px] relative z-10 lg:p-4 p-2 bg-[#F6B620]`}
+        className={`overflow-hidden w-[99.3%] lg:h-[100px] h-[60px] relative z-10 lg:p-4 p-2 bg-[#F6B620]`}
       >
         <div className="animate-marquee flex items-center lg:space-x-10 space-x-10">
           {Stripdata
@@ -31,7 +31,7 @@ function Strip() {
         </div>
       </div>
       <div
-        className={`overflow-hidden w-full  lg:-ml-3 -ml-2 lg:p-4 p-2  lg:h-[100px] h-[60px]  absolute lg:-mt-[90px] -mt-[60px] bg-black lg:-rotate-6 -rotate-12`}
+        className={`overflow-hidden lg:w-[101%] w-[103%] clip-right-cut  lg:-ml-[16px] -ml-[12px]  lg:p-4 p-2  lg:h-[100px] h-[60px]  absolute lg:-mt-[90px] -mt-[60px] bg-black lg:-rotate-6 -rotate-12`}
       >
         <div className="animate-marquee flex items-center lg:space-x-10 space-x-10">
           {Stripdata

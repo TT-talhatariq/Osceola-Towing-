@@ -87,10 +87,10 @@ function ContactForm() {
           className="rounded-xl lg:p-5 p-3 w-full mt-5 shade outline-none text-[#666666] text-[14px] lg:text-[18px]"
         >
           <option value="">Choose Your Service</option>
-          <option value="web-design">Web Design</option>
-          <option value="seo">SEO Optimization</option>
-          <option value="content-writing">Content Writing</option>
-          <option value="digital-marketing">Digital Marketing</option>
+          <option value="web-design">Towing</option>
+          <option value="seo">Roadside Assistance </option>
+          <option value="content-writing">Accident Recovery</option>
+          <option value="digital-marketing">Long-Distance Towing</option>
         </select>
         {errors.service && (
           <p className="text-red-500">{errors.service.message}</p>

@@ -66,7 +66,7 @@ function Service() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="leading-[2] text-[#666666] lg:text-[18px] text-[11px] lg:mb-0 mb-10 "
+          className="leading-[2] text-[#666666] lg:text-[18px] text-[14px] lg:mb-0 mb-10 "
         >
           At Osceola Towing, we provide a full range of towing and roadside
           assistance services designed to get you back on the road quickly and
@@ -84,6 +84,7 @@ function Service() {
         imageSrc2="/assets/towing2.jpg"
         textColor="text-white"
         listColor="text-white"
+        descText="text-white"
         background="lg:bg-[url('/assets/service-bg.svg')] bg-[url('/assets/services-bg-mobile.svg')] xl:h-[1000px] lg:h-[900px]  pt-[270px] -mt-60 xl:pt-[330px] lg:pt-[330px]"
       />
 
@@ -219,8 +220,9 @@ function Service() {
         visible="block"
       />
       <Testimonals
-        background="lg:bg-[url('/assets/testiomonals-bg.svg')] bg-cover bg-center bg-no-repeat"
+        background="lg:bg-[url('/assets/testiomonals-bg.svg')] bg-[url('/assets/testiomonals-bg-mobile.svg')] bg-cover bg-center bg-no-repeat"
         headingColor="text-[#096656]"
+        iconColor="text-white"
       />
 
       <HelpSection

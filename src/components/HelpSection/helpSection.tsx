@@ -30,7 +30,7 @@ function HelpSection({
             height={7}
             className="lg:w-[439px] mx-auto w-[200px]"
           />
-          <p className="lg:text-[18px] text-[12px] mt-5 text-center lg:px-20 leading-[2] px-5">
+          <p className="lg:text-[18px] text-[13px] mt-5 text-center lg:px-20 leading-[2] px-5">
             Stranded on the road or in need of reliable towing services? Don’t
             wait—our experienced team is ready to assist you 24/7. With fast
             response times, professional service, and competitive pricing, we’re

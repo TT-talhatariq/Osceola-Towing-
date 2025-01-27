@@ -12,4 +12,5 @@ export type testimonalProps = {
   titleColor?: string;
   heading?: string;
   headingColor?: string;
+  iconColor?: string;
 };

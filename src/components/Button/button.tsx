@@ -15,7 +15,7 @@ function Button({
   return (
     <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
       <div
-        className={`flex items-center lg:gap-3 gap-2 ${bgcolor} ${width} ${center} justify-center ${textColor} text-center rounded-full h-[35px] lg:h-[53px]`}
+        className={`flex items-center raleway lg:gap-3 gap-2 ${bgcolor} ${width} ${center} justify-center ${textColor} text-center rounded-full h-[35px] lg:h-[53px]`}
       >
         <button className={`lg:text-[18px] text-[14px]`}>{title}</button>
         <div

@@ -42,6 +42,11 @@
   }
 }
 
+.clip-right-cut {
+  clip-path: polygon(0 0, 100% 0, 99% 100%, 0% 100%);
+  border-bottom-right-radius: 50px;
+}
+
 .animate-marquee {
   display: flex;
   animation: marquee 12s linear infinite; /* Continuous movement */
