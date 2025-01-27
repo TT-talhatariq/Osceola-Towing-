@@ -94,11 +94,10 @@ function Chooseus({
                     whileInView={{ opacity: 2, x: 0 }}
                     transition={{ duration: 0.7 }}
                     style={{
-                      backgroundColor: "#F6F6F6",
                       border: "1px solid #F6B620",
                     }}
                     key={index}
-                    className="flex mt-5 w-[100%] shade lg:gap-5 gap-3 lg:p-[15px] p-[10px] rounded-lg lg:rounded-2xl"
+                    className="flex mt-5 bg-[#F6F6F6] hover:bg-white cursor-pointer w-[100%] hover:shadow-xl lg:gap-5 gap-3 lg:p-[15px] p-[10px] rounded-lg lg:rounded-2xl"
                   >
                     <Image
                       src="/assets/small-circle.svg"
@@ -112,7 +111,7 @@ function Chooseus({
                         {item.heading}
                       </h1>
 
-                      <p className="text-[#666666] lg:text-[18px] text-[10px]">
+                      <p className="text-[#666666] lg:text-[18px] text-[12px]">
                         {item.para}
                       </p>
                     </div>

@@ -93,7 +93,7 @@ function AboutUs() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="leading-[2] text-[#666666] raleway lg:text-[18px] text-[11px] lg:mb-0 mb-5 lg:mt-10 mt-5"
+          className="leading-[2] text-[#666666] raleway lg:text-[18px] text-[14px] lg:mb-0 mb-5 lg:mt-10 mt-5"
         >
           At Osceola Towing, we are more than just a towing company – we are a
           team of dedicated professionals committed to providing top-notch
@@ -139,7 +139,7 @@ function AboutUs() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:leading-[2] raleway text-[#666666] lg:text-[18px] text-[12px] mt-2 "
+            className="lg:leading-[2] leading-normal raleway text-[#666666] lg:text-[18px] text-[14px] mt-2 "
           >
             To deliver reliable, fast, and safe towing and roadside assistance
             services with unmatched customer care, ensuring every driver feels
@@ -181,7 +181,7 @@ function AboutUs() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
-                        className="text-[#666666] raleway lg:text-[18px] mt-2 text-[10px]"
+                        className="text-[#666666] raleway lg:text-[18px] mt-2 text-[13px]"
                       >
                         {item.para}
                       </motion.p>

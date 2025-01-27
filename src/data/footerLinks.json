@@ -1,12 +1,12 @@
 {
-  "NavigationLink": [
+  "NavigationLinks": [
     { "name": "Home", "link": "/" },
     { "name": "About Us", "link": "/about-us" },
     { "name": "Services", "link": "/services" },
     { "name": "Gallery", "link": "/gallery" },
     { "name": "Contact Us", "link": "/contact-us" }
   ],
-  "SupportLink": [
+  "SupportLinks": [
     { "name": "Privacy Policy", "link": "/" },
     { "name": "Terms & Services", "link": "/" }
   ]

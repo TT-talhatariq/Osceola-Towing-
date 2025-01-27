@@ -75,7 +75,7 @@ function AboutUsOffer({
                       {item.heading}
                     </h1>
 
-                    <p className="text-[#666666] lg:text-[14px]  mt-2 text-[10px]">
+                    <p className="text-[#666666] lg:text-[14px]  mt-2 text-[12px]">
                       {item.para}
                     </p>
                   </div>

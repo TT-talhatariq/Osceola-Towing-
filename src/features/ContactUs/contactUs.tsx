@@ -54,7 +54,7 @@ function Contactus() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="leading-[2] text-[#666666] raleway lg:text-[18px] text-[11px] lg:mb-0 mb-10 lg:mt-10 mt-5"
+          className="leading-[2] text-[#666666] raleway lg:text-[18px] text-[14px] lg:mb-0 mb-10 lg:mt-10 mt-5"
         >
           We’re here to help 24/7! Whether you need immediate roadside
           assistance, towing services, or have questions about what we offer,

@@ -23,43 +23,57 @@ function Navbar() {
         <div className="bg-[#232323] py-3 px-24 raleway flex  items-center  justify-between ">
           <div className=" flex  items-center gap-10">
             <div className="flex items-center gap-3 ">
-              <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
-                <Image
-                  src="./assets/phone-icon.svg"
-                  alt="phone-icon"
-                  width={16}
-                  height={17}
-                />
-              </div>
+              <Link href="" className="cursor-pointer">
+                <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
+                  <Image
+                    src="./assets/phone-icon.svg"
+                    alt="phone-icon"
+                    width={16}
+                    height={17}
+                  />
+                </div>
+              </Link>
               <p className="text-white text-[14px]">+715 - 755- 3281</p>
             </div>
             <div className="flex items-center gap-3 ">
-              <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
-                <Image
-                  src="./assets/email-icon.svg"
-                  alt="phone-icon"
-                  width={16}
-                  height={17}
-                />
-              </div>
+              <Link href="" className="cursor-pointer">
+                <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
+                  <Image
+                    src="./assets/email-icon.svg"
+                    alt="phone-icon"
+                    width={16}
+                    height={17}
+                  />
+                </div>
+              </Link>
               <p className="text-white text-[15px]">
                 E-Mail Osceola Towing and Transport
               </p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
-              <FaFacebookF className="text-white" />
-            </div>{" "}
-            <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
-              <FaInstagram className="text-white" />
-            </div>{" "}
-            <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
-              <FaTwitter className="text-white" />
-            </div>{" "}
-            <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
-              <FaLinkedinIn className="text-white" />
-            </div>
+            <Link href="/" className="cursor-pointer">
+              {" "}
+              <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
+                <FaFacebookF className="text-white" />
+              </div>{" "}
+            </Link>
+            <Link href="/" className="cursor-pointer">
+              <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
+                <FaInstagram className="text-white" />
+              </div>{" "}
+            </Link>
+            <Link href="/" className="cursor-pointer">
+              {" "}
+              <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
+                <FaTwitter className="text-white" />
+              </div>{" "}
+            </Link>
+            <Link href="/" className="cursor-pointer">
+              <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
+                <FaLinkedinIn className="text-white" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -81,7 +95,7 @@ function Navbar() {
                     href={item.url}
                     className={`lg:block hidden font-normal text-[18px] ${
                       pathname === item.url
-                        ? "text-yellow-500" // Active link styling
+                        ? "text-yellow-500 font-bold!important" // Active link styling
                         : "text-[#666666]"
                     } hover:text-[#F6B620]`}
                   >
@@ -91,10 +105,11 @@ function Navbar() {
               ))
             : "loading"}
         </ul>
-
-        <div className="lg:block hidden">
-          <Button title="Get started" width={"lg:w-[182px]"} />
-        </div>
+        <Link href="#Contactus">
+          <div className="lg:block hidden">
+            <Button title="Get started" width={"lg:w-[182px]"} />
+          </div>
+        </Link>
 
         <div className="lg:hidden block cursor-pointer" onClick={toogleOpen}>
           <Image

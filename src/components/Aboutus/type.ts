@@ -11,4 +11,5 @@ export type AboutusProps = {
   background?: string;
   textColor?: string;
   listColor?: string;
+  descText?: string;
 };

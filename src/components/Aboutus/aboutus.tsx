@@ -17,14 +17,15 @@ function Aboutus({
   ulHeading = "Perfect For:",
   background,
   listColor = "text-[#232323]",
+  descText = "text-[#666666]",
 }: AboutusProps) {
   return (
     <div
       className={`flex ${background} items-center bg-cover bg-center bg-no-repeat lg:flex-row flex-col-reverse justify-between  gap-5  lg:px-24 lg:pt-24 pt-12 p-4 `}
     >
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
         className={`lg:w-[45%]`}
       >
@@ -40,8 +41,8 @@ function Aboutus({
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
         className={`raleway  lg:w-[50%]
         text-start `}
@@ -59,11 +60,11 @@ function Aboutus({
           alt="circle"
           width={511}
           height={12}
-          className=" lg:w-[311px] w-[200px]   "
+          className=" lg:w-[311px] mx-auto w-[200px]   "
         />
         <p
-          className={`text-[#666666]
-           lg:text-[17px] text-[12px] leading-[2]  lg:my-10 my-3`}
+          className={`${descText}
+           lg:text-[17px] text-[13px] leading-[2]  lg:my-10 my-3`}
         >
           {description}
         </p>

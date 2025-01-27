@@ -57,13 +57,12 @@ function Emergency({
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.7 }}
                     style={{
-                      backgroundColor: "#F6F6F6",
                       border: "1px solid #F6B620",
                       borderRadius: "15px",
                       padding: "15px",
                     }}
                     key={index}
-                    className="flex mt-5 shadow-xl lg:gap-5 gap-3 "
+                    className="flex bg-[#F6F6F6] hover:bg-white mt-5 hover:shadow-xl cursor-pointer lg:gap-5 gap-3 "
                   >
                     <Image
                       src="/assets/small-circle.svg"
