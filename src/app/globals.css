@@ -43,8 +43,7 @@
 }
 
 .clip-right-cut {
-  clip-path: polygon(0 0, 100% 0, 99% 100%, 0% 100%);
-  border-bottom-right-radius: 50px;
+  transform: translateY(15px) skewY(-5deg);
 }
 
 .animate-marquee {
@@ -61,6 +60,9 @@
   }
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }

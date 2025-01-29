@@ -19,7 +19,7 @@ import { grifter } from "@/app/layout";
 function Homepage() {
   return (
     <>
-      <div className="relative lg:mt-[200px] mt-[100px]">
+      <div className="overflow-x-hidden relative lg:mt-[200px] mt-[100px]">
         <div className="lg:px-24 px-2 mb-32">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
