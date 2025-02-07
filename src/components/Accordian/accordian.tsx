@@ -35,12 +35,12 @@ function Accordions() {
                 {`${index + 1}. ${question}`}
                 <IoIosArrowDropdownCircle
                   className={`lg:w-8 lg:h-8  w-4 h-4 text-[#F6B620] transition-transform duration-300 ${
-                    openItem === index ? "rotate-180" : "rotate-0"
+                    openItem === index ? "rotate-180 " : "rotate-0"
                   }`}
                 />
               </div>
             }
-            className={`text-[#666666] rounded-full px-2 hover:shadow-xl mb-5 lg:text-[16px] text-[11px] border border-[#F6B620] bg-[#F6F6F6] hover:bg-white lg:pl-10 lg:pr-5 font-medium `}
+            className={`text-[#666666] rounded-3xl hover:shadow-xl mb-5 lg:text-[16px] text-[11px] border border-[#F6B620] bg-[#F6F6F6] hover:bg-white lg:pl-10 lg:pr-5 font-medium `}
           >
             {defaultContent}
           </AccordionItem>

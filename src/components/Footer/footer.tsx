@@ -24,19 +24,20 @@ function Footer() {
             />
           </Link>
 
-          <p className="lg:text-[18px]  text-[14px] text-[#666666] mb-3 mt-5 lg:w-80">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            tincidunt ex non pretium scelerisque. Sed dapibus nulla sit amet
-            libero eleifend, in tempus felis interdum.
+          <p className="lg:text-[18px]  text-[14px] text-[#666666] mb-3 mt-5 lg:w-96">
+            Osceola Towing delivers 24/7 emergency towing and roadside
+            assistance across Osceola County and beyond, combining fast
+            response, affordable rates, and state-of-the-art expertise to keep
+            you moving safely.
           </p>
           <div className="flex items-center lg:justify-start justify-center gap-4">
             <div className="bg-white shadow-lg rounded-full w-[40px] h-[40px] flex items-center flex-col justify-center">
-              <Link href="">
+              <Link href="https://web.facebook.com/p/Osceola-Transport-and-towing-100064027475834/?_rdc=1&_rdr#">
                 <FaFacebookF className="text-[#F6B620]" />
               </Link>
             </div>{" "}
             <div className="bg-white shadow-lg rounded-full w-[40px] h-[40px] flex items-center flex-col justify-center">
-              <Link href="">
+              <Link href="https://www.instagram.com/osceola_transportation_towing/">
                 <FaInstagram className="text-[#F6B620]" />
               </Link>
             </div>{" "}
