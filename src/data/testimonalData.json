@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "name": "John D.",
+    "name": "David W.",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "Best local towing company in the area. Family owned and operated with awesome people to help us when we needed it most.",
     "rating": 5,
-    "image": "/assets/person.svg"
+    "image": "/assets/davidProfile.png"
   },
   {
     "id": 2,
-    "name": "Kristin Watson",
+    "name": "Bridget Schwegman",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "I was so impressed with how quickly they picked up my car. Very friendly and reasonably priced!",
     "rating": 5,
-    "image": "/assets/person.svg"
+    "image": "/assets/bridgetProfile.png"
   },
   {
     "id": 3,
-    "name": "Michael R.",
+    "name": "Angel Buzay.",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "Lockout at my house, they were quick and friendly!!",
     "rating": 5,
-    "image": "/assets/person.svg"
+    "image": "/assets/angelProfile.png"
   },
   {
     "id": 4,
-    "name": "John D.",
+    "name": "Jennifer Dow- Clark.",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "These guys are friendly, courteous, and very reasonable with price! You don't find that very often these days! I highly recommend them if ever in need!!!!!",
     "rating": 5,
-    "image": "/assets/person.svg"
+    "image": "/assets/jenniferProfile.png"
   },
   {
     "id": 5,
-    "name": "Kristin Watson",
+    "name": "Cody Kapaun",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "Fast efficient professional fair priced and brought my vehicle where it needed to go.",
     "rating": 5,
-    "image": "/assets/person.svg"
+    "image": "/assets/codyProfile.png"
   },
   {
     "id": 6,
-    "name": "Michael R.",
+    "name": "Alicia Kellum.",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "Only place we will call for a tow. Great guys to work with and very helpful.",
     "rating": 5,
-    "image": "/assets/person.svg"
+    "image": "/assets/AliciaProfile.png"
   }
 ]

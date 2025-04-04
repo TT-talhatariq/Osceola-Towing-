@@ -83,6 +83,24 @@ function Navbar() {
           </div>
         </div>
       </div>
+      <div className="lg:hidden block   ">
+        <div className="bg-[#232323] py-3 raleway flex  items-center ">
+            <div className="flex items-center w-full justify-center">
+              <a href="tel:+17157553281" className="cursor-pointer">
+                <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center mx-2">
+                  <Image
+                    src="./assets/phone-icon.svg"
+                    alt="phone-icon"
+                    width={16}
+                    height={17}
+                  />
+                </div>
+              </a>
+              <p className="text-white text-[14px]">Call Now : +1 715-755-3281</p>
+            </div>
+        
+        </div>
+      </div>
       <div className="flex items-center lg:px-24 px-6 lg:py-5 py-3 bg-white raleway shadow-lg justify-between">
         <Link href="/">
           <Image
