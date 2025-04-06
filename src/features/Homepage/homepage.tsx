@@ -27,7 +27,7 @@ function Homepage() {
             transition={{ duration: 0.7 }}
             className={`text-center text-[#232323] lg:text-[86px] ${grifter.className} leading-tight text-[30px] font-bold`}
           >
-            Reliable Truck Towing Services in Osceola County
+            Reliable & Trusted Towing Services in Osceola County
           </motion.h1>
 
           <Image
@@ -76,7 +76,7 @@ function Homepage() {
       <Aboutus
         serviceNumber="About Us"
         title="Welcome to Osceola Towing"
-        description="At Osceola Towing, we provide fast, reliable, and affordable towing services for trucks of all sizes. Whether it’s a roadside breakdown, accident recovery, or heavy-duty towing, our experienced team is here to help. With a commitment to customer satisfaction and safety, we’re your trusted towing partner in Osceola County and beyond."
+        description="At Osceola Towing, we provide fast, reliable, and affordable towing services for all your needs. Whether it’s a roadside breakdown, accident recovery, or heavy-duty towing, our experienced team is here to help. With a commitment to customer satisfaction and safety, we’re your trusted towing partner in Osceola County and beyond."
         buttonText="Read More"
         imageSrc1="/assets/welcome-image.svg"
         background="bg-white"

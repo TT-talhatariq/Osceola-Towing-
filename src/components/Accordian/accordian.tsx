@@ -5,8 +5,32 @@ import { useState } from "react";
 function Accordions() {
   const [openItem, setOpenItem] = useState<number | null>(null);
 
-  const defaultContent =
-    "Yes, we provide round-the-clock towing and roadside assistance services, including holidays and weekends.";
+  const faqData = [
+    {
+      question: "What types of vehicles do you tow?",
+      answer: "We tow a wide range of vehicles including cars, SUVs, motorcycles, trucks, and even heavy-duty commercial vehicles. Our fleet is equipped to handle vehicles of all sizes and conditions."
+    },
+    {
+      question: "Are your services available 24/7?",
+      answer: "We're proud to offer comprehensive 24/7 towing and roadside assistance services, available every day of the year including holidays and weekends."
+    },
+    {
+      question: "How quickly can you reach me?",
+      answer: "Our response time typically ranges from 15-45 minutes depending on your location and current demand. We prioritize emergency situations and always strive to reach you as quickly as possible."
+    },
+    {
+      question: "Do you offer roadside assistance in addition to towing?",
+      answer: "Yes, we provide a full range of roadside assistance services including jump starts, tire changes, fuel delivery, lockout assistance, and minor mechanical help to get you back on the road."
+    },
+    {
+      question: "How much do your services cost?",
+      answer: "Our pricing varies based on the service required, distance, vehicle type, and conditions. We provide transparent quotes before beginning service and offer competitive rates with no hidden fees."
+    },
+    {
+      question: "Can you help with accident recovery?",
+      answer: "Absolutely. Our team is trained in safe accident recovery procedures. We can carefully remove your vehicle from the scene and transport it to your preferred repair facility or another destination."
+    }
+  ];
 
   const handleItemClick = (key: number | null) => {
     setOpenItem(openItem === key ? null : key);
@@ -14,14 +38,7 @@ function Accordions() {
 
   return (
     <Accordion variant="splitted" className="lg:mt-20 mt-14 z-20 ">
-      {[
-        "What types of vehicles do you tow?",
-        "Are your services available 24/7?",
-        "How quickly can you reach me?",
-        "Do you offer roadside assistance in addition to towing?",
-        "How much do your services cost?",
-        "Can you help with accident recovery?",
-      ].map((question, index) => {
+      {faqData.map((item, index) => {
         return (
           <AccordionItem
             key={index}
@@ -32,7 +49,7 @@ function Accordions() {
                 onClick={() => handleItemClick(index)}
                 className="flex justify-between  items-center lg:text-[18px] text-[12px] lg:px-0  gap-4 cursor-pointer"
               >
-                {`${index + 1}. ${question}`}
+                {`${index + 1}. ${item.question}`}
                 <IoIosArrowDropdownCircle
                   className={`lg:w-8 lg:h-8  w-4 h-4 text-[#F6B620] transition-transform duration-300 ${
                     openItem === index ? "rotate-180 " : "rotate-0"
@@ -42,7 +59,7 @@ function Accordions() {
             }
             className={`text-[#666666] rounded-3xl hover:shadow-xl mb-5 lg:text-[16px] text-[11px] border border-[#F6B620] bg-[#F6F6F6] hover:bg-white lg:pl-10 lg:pr-5 font-medium `}
           >
-            {defaultContent}
+            {item.answer}
           </AccordionItem>
         );
       })}
