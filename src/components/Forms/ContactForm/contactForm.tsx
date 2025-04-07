@@ -35,13 +35,20 @@ function ContactForm() {
 
     try {
       const formPayload = new FormData();
-      formPayload.append("email", process.env.NEXT_PUBLIC_CLIENT_EMAIL || "");
+      formPayload.append(
+        "email",
+        process.env.NEXT_PUBLIC_CLIENT_EMAIL || "tt.talhatariq1@gmail.com"
+      );
       formPayload.append("subject", "New query from Osceola Towing");
       formPayload.append("html", EmailTemplate({ values: data }));
-      const response = await fetch(process.env.NEXT_PUBLIC_API_BASE_URL || "", {
-        method: "POST",
-        body: formPayload,
-      });
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_API_BASE_URL ||
+          "https://stag.api.carzoomo.com/socially/send-email",
+        {
+          method: "POST",
+          body: formPayload,
+        }
+      );
 
       if (!response.ok) throw new Error("Failed to submit form");
       toast.dismiss(loadingToast);

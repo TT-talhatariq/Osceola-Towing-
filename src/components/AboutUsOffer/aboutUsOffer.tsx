@@ -17,14 +17,14 @@ function AboutUsOffer({
   return (
     <div
       className={`${background} relative bg-cover my-20 flex flex-col justify-center items-center bg-center
-        raleway bg-no-repeat w-full lg:px-24 lg:pt-32 pt-14 lg:pb-20 pb-5 `}
+        raleway bg-no-repeat w-full lg:px-10 px-5 lg:pt-32 pt-14 lg:pb-20 pb-5`}
     >
       <div>
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className={`text-[22px] ${titleColor} text-center  font-medium`}
+          className={`text-[22px] ${titleColor} text-center font-medium`}
         >
           {title}
         </motion.h1>
@@ -41,10 +41,10 @@ function AboutUsOffer({
           alt="circle"
           width={326}
           height={7}
-          className="lg:w-[439px] mx-auto  w-[200px]"
+          className="lg:w-[439px] mx-auto w-[200px]"
         />
       </div>
-      <div className="lg:flex z-10 items-center lg:mt-20 mt-5 gap-5 lg:px-24 p-5 ">
+      <div className="lg:flex z-10 items-center lg:mt-20 mt-5 gap-5 w-full max-w-[1200px]">
         {data
           ? data.map((item: Item, index: number) => {
               return (
@@ -54,7 +54,7 @@ function AboutUsOffer({
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.5 }}
                   key={index}
-                  className="lg:w-[370px] lg:mt-0 mt-5 lg:rounded-3xl shade rounded-xl lg:p-5 p-3 bg-white"
+                  className="lg:w-1/3 w-full lg:mt-0 mt-5 lg:rounded-3xl shade rounded-xl lg:p-5 p-3 bg-white"
                 >
                   <div className={`flex justify-between items-center mb-2`}>
                     <Image

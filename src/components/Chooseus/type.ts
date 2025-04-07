@@ -13,4 +13,8 @@ export type ChooseProps = {
   ulHeading?: string;
   perfectForItems?: string[];
   visible?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  secondaryButtonText?: string;
+  secondaryButtonLink?: string;
 };

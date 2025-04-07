@@ -1,49 +1,49 @@
 [
   {
     "id": 1,
-    "name": "John D.",
+    "name": "David W.",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "Best local towing company in the area. Family owned and operated with awesome people to help us when we needed it most.",
     "rating": 5,
     "image": "/assets/person.svg"
   },
   {
     "id": 2,
-    "name": "Kristin Watson",
+    "name": "D L",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "Osceola Towing was great to use for towing couldn't have been a better experience. Friendly, very quick to get to me stuck on the side of the road, loaded up my van on a flat bed and brought back to my house. All in a professional manner and at a reasonable rate.",
     "rating": 5,
     "image": "/assets/person.svg"
   },
   {
     "id": 3,
-    "name": "Michael R.",
+    "name": "Miranda Spry",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "This company was amazing. After being set up with another company and waiting the 90-120 eta they provided; they still weren't there after 3 hours. Ended up cancelling and rescheduled with these guys. They were quick and professional!",
     "rating": 5,
     "image": "/assets/person.svg"
   },
   {
     "id": 4,
-    "name": "John D.",
+    "name": "Shannon Buchanan",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "We were moving when our truck wouldn't start. Not only did this wonderful team tow our truck to the storage facility, they helped us unload everything. Exceptional service that went above and beyond!",
     "rating": 5,
     "image": "/assets/person.svg"
   },
   {
     "id": 5,
-    "name": "Kristin Watson",
+    "name": "Jennifer Dow-Clark",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "These guys are friendly, courteous, and very reasonable with price! You don't find that very often these days! I highly recommend them if ever in need!!!!!",
     "rating": 5,
     "image": "/assets/person.svg"
   },
   {
     "id": 6,
-    "name": "Michael R.",
+    "name": "Steven Wright",
     "role": "Satisfied Customer",
-    "feedback": "The team at Osceola Towing saved the day when my truck broke down. Their response time and professionalism were unmatched!",
+    "feedback": "Starter went out on my truck and the driver was quite helpful. He crawled underneath and tapped on the starter until it would engage and charged me a small fee for driving around 25 miles each way. Very professional service!",
     "rating": 5,
     "image": "/assets/person.svg"
   }
