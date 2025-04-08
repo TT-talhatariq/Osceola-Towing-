@@ -36,7 +36,7 @@ export default function ServicePage({
 }: ServicePageProps) {
   return (
     <div>
-      <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center lg:h-[75vh] h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full">
+      <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center lg:h-[75vh] h-[calc(100vh-40vh)] raleway lg:bg-no-repeat w-full">
         <div className="lg:mt-20">
           <h1
             className={`text-center ${grifter.className} lg:text-[120px] text-[32px] font-bold mb-6`}
@@ -99,7 +99,7 @@ export default function ServicePage({
               )}
 
               <div className="mt-8 flex gap-4 lg:flex-row flex-col">
-                <Link href="/book-services">
+                <Link href="#contactUs">
                   <Button
                     title="Request Service"
                     width="lg:w-[200px] w-full"

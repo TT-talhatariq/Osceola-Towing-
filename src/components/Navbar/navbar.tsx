@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import Wrapper from "@/components/Wrapper/wrapper";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
+import { useMediaQuery } from "@react-hook/media-query";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +26,6 @@ function Navbar() {
     { name: "Long Distance Towing", url: "/services/long-distance-towing" },
     { name: "Accident Recovery", url: "/services/accident-recovery" },
   ];
-
-  const mobileServicesLinks = servicesLinks.slice(1); // Exclude "All Services" from mobile dropdown
 
   // Handle click outside
   useEffect(() => {
@@ -49,6 +48,8 @@ function Navbar() {
   useEffect(() => {
     setIsServicesOpen(false);
   }, [pathname]);
+
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
     <div className="z-20 fixed right-0 top-0 left-0">
@@ -83,7 +84,7 @@ function Navbar() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Link
-                    href="mailto:info@osceolatowing.com"
+                    href="mailto:dispatch@jttr.net"
                     className="cursor-pointer"
                   >
                     <div className="bg-[#096656] rounded-full w-[33px] h-[33px] flex items-center flex-col justify-center">
@@ -95,9 +96,7 @@ function Navbar() {
                       />
                     </div>
                   </Link>
-                  <p className="text-white text-[15px]">
-                    info@osceolatowing.com
-                  </p>
+                  <p className="text-white text-[15px]">dispatch@jttr.net</p>
                 </div>
               </div>
             </div>
@@ -142,8 +141,8 @@ function Navbar() {
                               }`}
                             />
                           </div>
-                          {isServicesOpen && (
-                            <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
+                          {isServicesOpen && isDesktop && (
+                            <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 z-50">
                               {servicesLinks.map((service, idx) => (
                                 <Link
                                   key={idx}
@@ -194,70 +193,61 @@ function Navbar() {
       {isOpen && (
         <div className="flex rounded-2xl p-5 justify-between bg-white shadow-2xl absolute top-[72px] w-[90%] mx-5 right-0 left-0">
           <ul className="justify-between flex flex-col space-y-3 w-full">
-            {NavLink
-              ? NavLink.map((item, index) => (
-                  <li key={index}>
-                    {item.name === "Services" ? (
-                      <div className="relative">
-                        <Link
-                          href="/services"
-                          className="flex items-center justify-between cursor-pointer"
-                          onClick={() => {
-                            setIsServicesOpen(!isServicesOpen);
-                            if (!isServicesOpen) toogleClose();
-                          }}
-                        >
-                          <span className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]">
-                            All Services
-                          </span>
-                        </Link>
-                        <div
-                          className="flex items-center justify-between cursor-pointer mt-2"
-                          onClick={() => setIsServicesOpen(!isServicesOpen)}
-                        >
-                          <span className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]">
-                            Service Types
-                          </span>
-                          <IoIosArrowDown
-                            className={`text-[#666666] transition-transform ${
-                              isServicesOpen ? "rotate-180" : ""
-                            }`}
-                          />
-                        </div>
-                        {isServicesOpen && (
-                          <div className="mt-2 ml-4 space-y-2">
-                            {mobileServicesLinks.map((service, idx) => (
-                              <Link
-                                key={idx}
-                                href={service.url}
-                                className="block text-[#666666] hover:text-[#F6B620] text-sm"
-                                onClick={() => {
-                                  setIsServicesOpen(false);
-                                  toogleClose();
-                                }}
-                              >
-                                {service.name}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    ) : (
-                      <Link
-                        href={item.url}
-                        className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]"
-                        onClick={() => toogleClose()}
-                      >
-                        {item.name}
-                      </Link>
-                    )}
-                  </li>
-                ))
-              : "loading"}
+            <Link
+              href="/"
+              className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]"
+              onClick={toogleClose}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about-us"
+              className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]"
+              onClick={toogleClose}
+            >
+              About Us
+            </Link>
+            <div className="relative">
+              <span
+                className={`text-[#666666] block font-normal text-[16px] ${
+                  pathname.includes("/services") ? "text-[#F6B620]" : ""
+                }`}
+              >
+                Services
+              </span>
+              <div className="mt-2 ml-4 space-y-2">
+                {servicesLinks.map((service, idx) => (
+                  <Link
+                    key={idx}
+                    href={service.url}
+                    className={`block text-[#666666] hover:text-[#F6B620] text-sm py-1 ${
+                      pathname === service.url ? "text-[#F6B620]" : ""
+                    }`}
+                    onClick={toogleClose}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <Link
+              href="/gallery"
+              className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]"
+              onClick={toogleClose}
+            >
+              Gallery
+            </Link>
+            <Link
+              href="/contact-us"
+              className="text-[#666666] hover:text-[#F6B620] font-normal text-[16px]"
+              onClick={toogleClose}
+            >
+              Contact Us
+            </Link>
           </ul>
-          <div onClick={toogleClose} className="absolute top-5 right-5">
+          <button onClick={toogleClose} className="absolute top-5 right-5">
             <RxCross2 className="text-[#F6B620] text-lg" />
-          </div>
+          </button>
         </div>
       )}
     </div>

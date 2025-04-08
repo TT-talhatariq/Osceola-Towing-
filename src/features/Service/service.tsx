@@ -16,7 +16,7 @@ import Contactus from "@/components/ContactUs";
 function Service() {
   return (
     <div>
-      <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center lg:h-[75vh] h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full">
+      <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center lg:h-[75vh] h-[calc(100vh-40vh)] raleway lg:bg-no-repeat w-full">
         <div className="lg:mt-20">
           <h1
             className={`text-center ${grifter.className} lg:text-[150px] text-[32px] font-bold mb-6`}
@@ -94,7 +94,7 @@ function Service() {
           "Construction Vehicles",
         ]}
         buttonText="Request Now"
-        buttonLink="#Contactus"
+        buttonLink="#contactUs"
         secondaryButtonText="View Details"
         secondaryButtonLink="/services/heavy-duty-towing"
         imageSrc1="/assets/service-about-image.svg"
@@ -253,7 +253,7 @@ function Service() {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="flex gap-4 mt-8 lg:flex-row flex-col"
               >
-                <Link href="#Contactus">
+                <Link href="#contactUs">
                   <Button
                     title="Request Now"
                     center="mx-0"
@@ -295,7 +295,7 @@ function Service() {
         title="Long-Distance Towing"
         description="Trust your vehicle to our expert long-distance towing service. We offer secure, GPS-tracked transport across state lines with real-time updates. Our enclosed and flatbed options ensure your vehicle arrives in the same condition it left, whether it's a luxury car, classic vehicle, or daily driver."
         buttonText="Request Now"
-        buttonLink="#Contactus"
+        buttonLink="#contactUs"
         secondaryButtonText="View Details"
         secondaryButtonLink="/services/long-distance-towing"
         perfectForItems={[
@@ -321,7 +321,7 @@ function Service() {
         ulHeading="Specialized For:"
         visible="block"
         buttonText="Request Now"
-        buttonLink="#Contactus"
+        buttonLink="#contactUs"
         secondaryButtonText="View Details"
         secondaryButtonLink="/services/accident-recovery"
       />
@@ -334,7 +334,7 @@ function Service() {
       <HelpSection
         bgImage="lg:bg-[url('/assets/help-black-bg.svg')] bg-[url('/assets/help-black-mobile-bg.svg')]"
         buttonPrimaryProps={{
-          title: "Request a Tow Online",
+          title: "Contact Us",
           width: "lg:w-[267px] w-[190px]",
           bgcolor: "bg-[#096656]",
           iconColor: "text-black",

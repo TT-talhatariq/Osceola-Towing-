@@ -40,7 +40,7 @@ function HelpSection({
             safely.
           </p>
           <div className="flex items-center mt-10 justify-center lg:gap-5 gap-3 lg:flex-row flex-col lg:w-auto w-full">
-            <Link href="#Contactus" className="cursor-pointer w-full lg:w-auto">
+            <Link href="#contactUs" className="cursor-pointer w-full lg:w-auto">
               <Button {...buttonPrimaryProps} width="lg:w-[182px] w-full" />
             </Link>
             <a

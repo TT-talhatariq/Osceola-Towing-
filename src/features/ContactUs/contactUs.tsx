@@ -10,8 +10,8 @@ import Wrapper from "@/components/Wrapper/wrapper";
 
 function Contactus() {
   return (
-    <div>
-      <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center lg:h-[75vh] h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full">
+    <div id="#contactUs">
+      <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center lg:h-[75vh] h-[calc(100vh-40vh)] raleway lg:bg-no-repeat w-full">
         <div className="lg:mt-20">
           <h1
             className={`text-center ${grifter.className} lg:text-[150px] text-[32px] font-bold mb-6`}
@@ -75,7 +75,7 @@ function Contactus() {
       <HelpSection
         bgImage="lg:bg-[url('/assets/help-black-bg.svg')] bg-[url('/assets/help-black-mobile-bg.svg')]"
         buttonPrimaryProps={{
-          title: "Request a Tow Online",
+          title: "Contact Us",
           width: "lg:w-[267px] w-[190px]",
           bgcolor: "bg-[#096656]",
           iconColor: "text-black",

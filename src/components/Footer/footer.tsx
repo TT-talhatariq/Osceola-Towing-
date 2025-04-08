@@ -32,7 +32,7 @@ function Footer() {
               />
             </Link>
 
-            <p className="lg:text-[18px] text-[14px] text-[#666666] mb-3 mt-5 lg:w-96">
+            <p className="lg:text-[18px] text-[14px] text-[#666666] mb-3 mt-5 lg:w-96 px-3">
               Osceola Towing delivers 24/7 emergency towing and roadside
               assistance across Osceola County and beyond, combining fast
               response, affordable rates, and state-of-the-art expertise to keep
@@ -51,10 +51,10 @@ function Footer() {
           <RenderSection title="Our Services" items={servicesLinks} />
         </div>
       </Wrapper>
-      <div>
-        <h1 className="lg:text-[20px] text-[9px] text-white raleway bg-[#232323] text-center p-3">
-          copy right by Osceola Towing Website Design. All Right Reserved
-        </h1>
+      <div className="bg-[#232323]">
+        <p className="lg:text-[16px] text-[12px] text-white raleway text-center py-4">
+          © {new Date().getFullYear()} Osceola Towing. All Rights Reserved.
+        </p>
       </div>
     </>
   );

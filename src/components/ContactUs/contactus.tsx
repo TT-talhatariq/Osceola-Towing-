@@ -7,7 +7,7 @@ import Wrapper from "@/components/Wrapper/wrapper";
 
 function Contactus({ background = "bg-[#F6B620]" }: ContactProps) {
   return (
-    <div id="Contactus" className={`${background} raleway py-20`}>
+    <div id="contactUs" className={`${background} raleway py-20`}>
       <Wrapper>
         <div className="lg:flex items-stretch gap-12">
           {/* Form Section */}

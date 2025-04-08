@@ -45,7 +45,7 @@ function Form() {
       const formPayload = new FormData();
       formPayload.append(
         "email",
-        process.env.NEXT_PUBLIC_CLIENT_EMAIL || "dispatch@osceolatowing.com"
+        process.env.NEXT_PUBLIC_CLIENT_EMAIL || "dispatch@jttr.net"
       );
       formPayload.append("subject", "New query from Osceola Towing");
       formPayload.append("html", JSON.stringify(data)); // Replace with your email template

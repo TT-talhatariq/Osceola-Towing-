@@ -13,7 +13,7 @@ function BookServices() {
     <div>
       {" "}
       <div
-        className={`lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center  lg:h-screen h-[calc(100vh-50vh)] raleway lg:bg-no-repeat w-full lg:py-0 py-14 `}
+        className={`lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center  lg:h-screen h-[calc(100vh-40vh)] raleway lg:bg-no-repeat w-full lg:py-0 py-14 `}
       >
         <div>
           <h1

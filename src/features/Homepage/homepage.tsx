@@ -60,7 +60,7 @@ function Homepage() {
             <p className="text-[#F6B620] raleway lg:text-[28px] px-6 text-[14px] lg:mb-[40px]  mb-[20px]   lg:-mt-5 mt-5 text-center ">
               Available 24/7 to Get You Back on the Road Safely and Quickly.
             </p>
-            <Link href="#Contactus">
+            <Link href="#contactUs">
               <Button
                 title="Request a Tow Now"
                 width="lg:w-[251px] lg:mx-0 mx-auto w-[164px]"
