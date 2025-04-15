@@ -30,7 +30,7 @@ function Homepage() {
               transition={{ duration: 0.7 }}
               className={`text-center text-[#232323] lg:text-[86px] ${grifter.className} leading-tight text-[30px] font-bold`}
             >
-              Reliable & Trusted Towing Services in Osceola County
+              Reliable & Trusted Towing Service For Any Situation
             </motion.h1>
 
             <Image
