@@ -43,7 +43,7 @@ function Form() {
 
     try {
       const formPayload = new FormData();
-      formPayload.append("email", "rafeeqk444@gmail.com");
+      formPayload.append("email", "dispatch@jttr.net");
       formPayload.append("subject", "New query from Osceola Towing");
       formPayload.append("html", JSON.stringify(data)); // Replace with your email template
 
