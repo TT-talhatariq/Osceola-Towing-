@@ -43,16 +43,12 @@ function Form() {
 
     try {
       const formPayload = new FormData();
-      formPayload.append(
-        "email",
-        process.env.NEXT_PUBLIC_CLIENT_EMAIL || "dispatch@jttr.net"
-      );
+      formPayload.append("email", "dispatch@jttr.net");
       formPayload.append("subject", "New query from Osceola Towing");
       formPayload.append("html", JSON.stringify(data)); // Replace with your email template
 
       const response = await fetch(
-        process.env.NEXT_PUBLIC_API_BASE_URL ||
-          "https://stag.api.carzoomo.com/socially/send-email",
+        "https://api.carzoomo.com/socially/send-email",
         {
           method: "POST",
           body: formPayload,
