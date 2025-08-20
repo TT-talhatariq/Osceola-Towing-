@@ -58,7 +58,7 @@ function Testimonials({
           </motion.div>
           <div className="relative px-4 lg:px-16">
             <button
-              className="absolute cursor-pointer lg:-left-4 -left-2 top-1/2 transform -translate-y-1/2 z-10"
+              className="absolute cursor-pointer lg:-left-4 -left-2 top-1/2 transform -translate-y-1/2 z-10 p-3"
               id="prevButton"
             >
               <FaLessThan className={`lg:text-2xl text-lg ${iconColor}`} />
@@ -136,7 +136,7 @@ function Testimonials({
             </Swiper>
             <div className="swiper-pagination-custom mt-8 flex justify-center"></div>
             <button
-              className="absolute lg:-right-4 -right-2 top-1/2 transform -translate-y-1/2 z-10"
+              className="absolute lg:-right-4 -right-2 top-1/2 transform -translate-y-1/2 z-10 p-3"
               id="nextButton"
             >
               <FaGreaterThan className={`lg:text-2xl text-lg ${iconColor}`} />
