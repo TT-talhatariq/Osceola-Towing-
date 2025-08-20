@@ -1,10 +1,9 @@
 "use client";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import React, { useState } from "react";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import { useState } from "react";
 
 function Accordions() {
-  const [openItem, setOpenItem] = useState<number | null>(null);
+  const [openItems, setOpenItems] = useState<number[]>([]);
 
   const faqData = [
     {
@@ -39,41 +38,56 @@ function Accordions() {
     },
   ];
 
-  const handleItemClick = (key: number | null) => {
-    setOpenItem(openItem === key ? null : key);
+  const toggleItem = (index: number) => {
+    setOpenItems(prev => 
+      prev.includes(index) 
+        ? prev.filter(item => item !== index)
+        : [...prev, index]
+    );
   };
 
   return (
-    <Accordion variant="splitted" className="lg:mt-20 mt-14 z-20">
+    <div className="lg:mt-20 mt-14 z-20 space-y-4">
       {faqData.map((item, index) => {
+        const isOpen = openItems.includes(index);
+        
         return (
-          <AccordionItem
+          <div
             key={index}
-            indicator
-            aria-label={`Accordion ${index + 1}`}
-            title={
-              <div
-                onClick={() => handleItemClick(index)}
-                className="flex items-center justify-between lg:text-[18px] text-[12px] lg:px-0 cursor-pointer"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="inline-block w-5">{index + 1}.</span>
-                  <span>{item.question}</span>
-                </div>
-                <IoIosArrowDropdownCircle
-                  className={`lg:w-8 lg:h-8 w-4 h-4 text-[#F6B620] transition-transform duration-300 ml-4 ${
-                    openItem === index ? "rotate-180" : "rotate-0"
-                  }`}
-                />
-              </div>
-            }
-            className="text-[#666666] rounded-3xl hover:shadow-xl mb-5 lg:text-[16px] text-[11px] border border-[#F6B620] bg-[#F6F6F6] hover:bg-white lg:pl-10 lg:pr-5 font-medium"
+            className="text-[#666666] rounded-3xl hover:shadow-xl mb-5 lg:text-[16px] text-[11px] border border-[#F6B620] bg-[#F6F6F6] hover:bg-white lg:pl-10 lg:pr-5 pl-4 pr-4 font-medium overflow-hidden"
           >
-            {item.answer}
-          </AccordionItem>
+            {/* Question Header */}
+            <div
+              onClick={() => toggleItem(index)}
+              className="flex items-center justify-between lg:text-[18px] text-[12px] py-4 cursor-pointer"
+            >
+              <div className="flex items-center gap-3">
+                <span className="inline-block w-5">{index + 1}.</span>
+                <span className="lg:text-[18px] text-[14px]">{item.question}</span>
+              </div>
+              <IoIosArrowDropdownCircle
+                className={`lg:w-8 lg:h-8 w-6 h-6 text-[#F6B620] transition-transform duration-300 ml-4 ${
+                  isOpen ? "rotate-180" : "rotate-0"
+                }`}
+              />
+            </div>
+            
+            {/* Answer Content */}
+            <div
+              className={`transition-all duration-300 ease-in-out ${
+                isOpen 
+                  ? "max-h-96 opacity-100 pb-4" 
+                  : "max-h-0 opacity-0 overflow-hidden"
+              }`}
+            >
+              <div className="lg:text-[16px] text-[13px] leading-relaxed pl-8 pr-4">
+                {item.answer}
+              </div>
+            </div>
+          </div>
         );
       })}
-    </Accordion>
+    </div>
   );
 }
 

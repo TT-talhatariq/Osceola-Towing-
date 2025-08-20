@@ -45,7 +45,7 @@ function Gallery() {
             />
           </div>
           <Link href="/gallery" className="lg:block hidden">
-            <Button title="View All Our Gallery" width={"lg:w-[251px]"} />
+            <Button title="View Complete Gallery" width={"lg:w-[251px]"} />
           </Link>
         </div>
         <motion.div
@@ -63,7 +63,7 @@ function Gallery() {
               alt="circle"
               width={505}
               height={351}
-              className="w-auto h-auto"
+              className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
             />{" "}
           </motion.div>
           <motion.div
@@ -75,7 +75,7 @@ function Gallery() {
               alt="circle"
               width={400}
               height={351}
-              className="w-auto h-auto"
+              className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
             />{" "}
           </motion.div>
           <motion.div
@@ -87,7 +87,7 @@ function Gallery() {
               alt="circle"
               width={295}
               height={351}
-              className="w-auto h-auto"
+              className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
             />
           </motion.div>
         </motion.div>
@@ -106,7 +106,7 @@ function Gallery() {
               alt="circle"
               width={400}
               height={351}
-              className="w-auto h-auto"
+              className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
             />{" "}
           </motion.div>
           <motion.div
@@ -118,7 +118,7 @@ function Gallery() {
               alt="circle"
               width={295}
               height={351}
-              className="w-auto h-auto"
+              className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
             />{" "}
           </motion.div>
           <motion.div
@@ -130,7 +130,7 @@ function Gallery() {
               alt="circle"
               width={505}
               height={351}
-              className="w-auto h-auto"
+              className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
             />
           </motion.div>
         </motion.div>

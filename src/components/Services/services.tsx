@@ -17,6 +17,22 @@ function Services({
   visible,
   data,
 }: ServiceProps) {
+  // Function to get the URL for each service based on heading
+  const getServiceUrl = (serviceHeading: string): string => {
+    switch (serviceHeading.trim()) {
+      case "Heavy-Duty Towing":
+        return "/services/heavy-duty-towing";
+      case "Emergency Roadside":
+        return "/services/emergency-assistance";
+      case "Long-Distance Towing":
+        return "/services/long-distance-towing";
+      case "Accident Recovery":
+        return "/services/accident-recovery";
+      default:
+        return "/services";
+    }
+  };
+
   return (
     <div
       className={`${backgroundImage} lg:my-0 my-10 raleway bg-cover lg:bg-no-repeat lg:bg-center ${visible === "block" ? " lg:pt-[270px]  lg:h-[990px] lg:py-0 py-14" : "pt-20 pb-10"} w-full  `}
@@ -55,32 +71,33 @@ function Services({
             {data
               ? data.map((item: Item, index: number) => {
                   return (
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.5 }}
-                      key={index}
-                      className={`xl:w-[310px] lg:w-[250px]  cursor-pointer ${visible === "block" ? "shadow-none  lg:p-[15px] p-3 " : "shadow-xl p-3"} rounded-3xl bg-white relative`}
-                    >
-                      <Image
-                        src={item.images}
-                        alt="card"
-                        width={295}
-                        height={218}
-                      />
-                      <div
-                        className={`lg:w-[35px] ${visible === "block" ? "-mt-12" : "mt-7"} w-[30px] h-[30px] absolute lg:right-7 right-5  lg:h-[35px] flex flex-col justify-center items-center rounded-full bg-[#096656]`}
+                    <Link href={getServiceUrl(item.heading)} key={index}>
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.5 }}
+                        className={`xl:w-[310px] lg:w-[250px]  cursor-pointer ${visible === "block" ? "shadow-none  lg:p-[15px] p-3 " : "shadow-xl p-3"} rounded-3xl bg-white relative`}
                       >
-                        <BsArrowUpRight className="text-xl font-bold rotate-12 text-white" />
-                      </div>
-                      <h1 className="text-[#232323] lg:text-[21px] text-[17px] font-medium mt-4 mb-">
-                        {item.heading}
-                      </h1>
-                      <p
-                        className={` ${visible === "block" ? "text-[#666666]" : "text-[#096656]"} lg:text-[16px] text-[12px] leading-[2]`}
-                      >
-                        {item.para}{" "}
-                      </p>
-                    </motion.div>
+                        <Image
+                          src={item.images}
+                          alt="card"
+                          width={295}
+                          height={218}
+                        />
+                        <div
+                          className={`lg:w-[35px] ${visible === "block" ? "-mt-12" : "mt-7"} w-[30px] h-[30px] absolute lg:right-7 right-5  lg:h-[35px] flex flex-col justify-center items-center rounded-full bg-[#096656]`}
+                        >
+                          <BsArrowUpRight className="text-xl font-bold rotate-12 text-white" />
+                        </div>
+                        <h1 className="text-[#232323] lg:text-[21px] text-[17px] font-medium mt-4 mb-">
+                          {item.heading}
+                        </h1>
+                        <p
+                          className={` ${visible === "block" ? "text-[#666666]" : "text-[#096656]"} lg:text-[16px] text-[12px] leading-[2]`}
+                        >
+                          {item.para}{" "}
+                        </p>
+                      </motion.div>
+                    </Link>
                   );
                 })
               : "loading"}

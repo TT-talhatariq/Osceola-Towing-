@@ -17,7 +17,7 @@ import Wrapper from "@/components/Wrapper/wrapper";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="pt-6">
       <div className="lg:bg-[url('/assets/aboutus-bg.svg')] bg-cover flex flex-col justify-center items-center lg:h-[75vh] h-[calc(100vh-40vh)] raleway lg:bg-no-repeat w-full">
         <div className="lg:mt-20">
           <h1

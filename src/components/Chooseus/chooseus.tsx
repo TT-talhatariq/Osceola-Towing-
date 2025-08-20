@@ -26,8 +26,8 @@ function Chooseus({
   return (
     <div>
       <Wrapper>
-        <div className="raleway lg:flex items-center justify-between lg:pl-24  gap-10 mt-20">
-          <div className="lg:px-0 px-5 lg:w-[50%]">
+        <div className="raleway lg:flex items-center justify-between gap-10 mt-20 max-w-[1440px] mx-auto">
+          <div className="lg:px-4 px-7 lg:w-[50%]">
             <motion.h1
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
