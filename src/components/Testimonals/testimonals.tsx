@@ -95,7 +95,7 @@ function Testimonials({
             >
               {testimonials.map((testimonial: Testimonial) => (
                 <SwiperSlide key={testimonial.id}>
-                  <div className="bg-white shadow-lg rounded-xl p-6 h-[350px] flex flex-col justify-between border border-gray-100">
+                  <div className="bg-white shadow-lg rounded-xl p-6 h-[350px] flex flex-col justify-between border border-gray-100 mx-4 lg:mx-0">
                     <div>
                       <div className="mb-4 flex items-center gap-1">
                         {Array.from({ length: testimonial.rating }).map(
