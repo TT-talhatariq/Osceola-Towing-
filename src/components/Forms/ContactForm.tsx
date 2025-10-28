@@ -48,7 +48,7 @@ function Form() {
       formPayload.append("html", JSON.stringify(data)); // Replace with your email template
 
       const response = await fetch(
-        "https://api.carzoomo.com/socially/send-email",
+        "https://api.carbacked.com/socially/send-email",
         {
           method: "POST",
           body: formPayload,
