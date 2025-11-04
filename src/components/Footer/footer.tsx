@@ -55,6 +55,17 @@ function Footer() {
         <p className="lg:text-[16px] text-[12px] text-white raleway text-center py-4">
           © {new Date().getFullYear()} Osceola Towing. All Rights Reserved.
         </p>
+        <p className="lg:text-[16px] text-[12px] text-white raleway text-center pb-4">
+          Developed by{" "}
+          <Link
+            href="https://websocially.io"
+            className="text-blue-500 hover:text-blue-400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            websocially.io
+          </Link>
+        </p>
       </div>
     </>
   );
