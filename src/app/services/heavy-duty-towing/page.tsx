@@ -67,7 +67,7 @@ export default function HeavyDutyTowing() {
       description="Our heavy-duty towing service is equipped to handle the most challenging towing situations. With state-of-the-art equipment and certified operators, we ensure safe and efficient transport for all types of large vehicles and equipment."
       additionalDescription="Whether you need emergency towing for a broken-down semi-truck or scheduled transport for heavy machinery, our team has the expertise and equipment to get the job done right."
       equipmentList={equipmentList}
-      imageSrc="/assets/service-about-image.svg"
+      imageSrc="/assets/new-images/DJI_0484.jpg"
     />
   );
 }

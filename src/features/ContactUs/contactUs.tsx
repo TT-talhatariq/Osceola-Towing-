@@ -26,7 +26,7 @@ function Contactus() {
             className="lg:w-[600px] w-[150px] left-0 right-0 mx-auto"
           />
           <p className="text-center text-[#666666] raleway lg:text-[20px] text-[14px] mt-10 max-w-[700px] mx-auto">
-            Get in touch with our 24/7 towing and roadside assistance team
+            Call Now: (715) 755-3281 • Address: 688 Simmon Drive, Osceola WI 54020 • Hours: 24/7 Service
           </p>
         </div>
       </div>

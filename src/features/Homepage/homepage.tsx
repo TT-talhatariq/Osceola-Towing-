@@ -37,22 +37,21 @@ function Homepage() {
               className="flex flex-col gap-5 md:gap-6 text-center lg:text-left"
             >
               <span className="mx-auto inline-flex items-center justify-center rounded-full bg-[#096656]/10 px-4 py-2 text-xs md:text-sm font-semibold text-[#096656] lg:mx-0 lg:text-base">
-                24/7 Emergency Tow & Recovery
+                A Midwest Star Group Company
               </span>
               <h1
                 className={`${grifter.className} text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.15] md:leading-tight text-[#232323]`}
               >
-                Reliable Towing When Your Day Takes a Detour
+                Trusted 24/7 Towing & Recovery — Backed by 64 Years of Experience
               </h1>
               <p className="text-sm md:text-base lg:text-lg leading-relaxed text-[#4A4A4A] max-w-2xl mx-auto lg:mx-0">
-                Count on Osceola Towing for rapid roadside assistance, light and
-                heavy-duty recovery, and damage-free transport. Our local team is
-                on-call day and night to keep you moving safely.
+                Osceola Towing is proud to be part of the family-owned Midwest Star Group
+                network with 9 locations serving Minnesota & Wisconsin.
               </p>
               <div className="flex flex-col items-center gap-3 md:gap-4 sm:flex-row sm:justify-center lg:justify-start mt-2">
                 <Link href="#contactUs" className="w-full sm:w-auto">
                   <Button
-                    title="Request a Tow Now"
+                    title="Request a Tow"
                     width="w-full sm:w-auto"
                     center="mx-0"
                   />
@@ -115,9 +114,9 @@ function Homepage() {
       <Aboutus
         serviceNumber="About Us"
         title="Welcome to Osceola Towing"
-        description="At Osceola Towing, we provide fast, reliable, and affordable towing services for all your needs. Whether it's a roadside breakdown, accident recovery, or heavy-duty towing, our experienced team is here to help. With a commitment to customer satisfaction and safety, we're your trusted towing partner in Osceola County and beyond."
+        description="For over six decades, Midwest Star Group has been a family-owned leader in towing and recovery across Minnesota and Wisconsin. Now, Osceola Towing joins that legacy—bringing local service together with regional strength."
         buttonText="Read More"
-        imageSrc1="/assets/welcome-image.svg"
+        imageSrc1="/assets/new-images/DJI_0488.jpg"
         background="bg-white"
       />
 
@@ -131,7 +130,7 @@ function Homepage() {
       <Chooseus
         title="Why Choose Us"
         heading="Why Osceola Towing?"
-        image="/assets/choose-image.svg"
+        image="/assets/new-images/DJI_0484.jpg"
         data={ChooseCard}
       />
       <Testimonals
@@ -141,7 +140,7 @@ function Homepage() {
       />
       <Gallery />
       <Emergency
-        image="/assets/priority-image.svg"
+        image="/assets/new-images/DJI_0490.jpg"
         backgroundImage="lg:bg-[url('/assets/emergency-bg.svg')] lg:h-full h-[1140px] bg-[url('/assets/emergency-mobile.svg')]"
         textColor1="text-white"
         textColor2="text-white"

@@ -66,7 +66,7 @@ export default function LongDistanceTowing() {
       description="Our long-distance towing service provides reliable and secure transport for your vehicle, whether you're moving across the state or across the country. We specialize in safe, efficient, and timely delivery."
       additionalDescription="With our experienced drivers and well-maintained fleet, we ensure your vehicle arrives at its destination in the same condition it was picked up. We handle everything from standard cars to luxury vehicles."
       servicesList={servicesList}
-      imageSrc="/assets/services-3.svg"
+      imageSrc="/assets/new-images/DJI_0490.jpg"
     />
   );
 }

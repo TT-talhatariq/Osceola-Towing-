@@ -59,8 +59,8 @@ function Gallery() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/assets/gallery-image-one.svg"
-              alt="circle"
+              src="/assets/new-images/DJI_0484.jpg"
+              alt="Aerial view of Osceola Towing facility"
               width={505}
               height={351}
               className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
@@ -71,8 +71,8 @@ function Gallery() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/assets/gallery-image-two.svg"
-              alt="circle"
+              src="/assets/new-images/DJI_0488.jpg"
+              alt="Drone view of towing service vehicles"
               width={400}
               height={351}
               className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"
@@ -83,8 +83,8 @@ function Gallery() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/assets/gallery-image-three.svg"
-              alt="circle"
+              src="/assets/new-images/DJI_0490.jpg"
+              alt="Osceola Towing fleet from above"
               width={295}
               height={351}
               className="lg:w-[400px] lg:h-[280px] w-full h-auto object-cover rounded-lg"

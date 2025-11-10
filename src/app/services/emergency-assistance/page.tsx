@@ -67,7 +67,7 @@ export default function EmergencyAssistance() {
       description="When you're stranded on the road, every minute counts. Our emergency response team is available 24/7, ready to provide quick and professional assistance wherever you are."
       additionalDescription="With an average response time of 30 minutes or less, our fully equipped service vehicles and trained technicians ensure you get back on the road safely and quickly."
       servicesList={servicesList}
-      imageSrc="/assets/services-2.svg"
+      imageSrc="/assets/new-images/DJI_0488.jpg"
     />
   );
 }

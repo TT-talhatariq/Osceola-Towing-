@@ -69,7 +69,7 @@ export default function AccidentRecovery() {
       description="Our accident recovery team provides fast, professional response to accident scenes. We have the expertise and equipment to handle any recovery situation, from minor incidents to major accidents."
       additionalDescription="With our state-of-the-art recovery equipment and trained professionals, we ensure safe and efficient removal of vehicles while minimizing additional damage. We work closely with emergency services and insurance companies."
       servicesList={servicesList}
-      imageSrc="/assets/services-4.svg"
+      imageSrc="/assets/new-images/DJI_0484.jpg"
     />
   );
 }

@@ -52,6 +52,9 @@ function Footer() {
         </div>
       </Wrapper>
       <div className="bg-[#232323]">
+        <p className="lg:text-[16px] text-[12px] text-white raleway text-center pt-4 px-4">
+          Osceola Towing is now part of the Midwest Star Group family — 9 locations strong, 64 years of trusted, family-owned service.
+        </p>
         <p className="lg:text-[16px] text-[12px] text-white raleway text-center py-4">
           © {new Date().getFullYear()} Osceola Towing. All Rights Reserved.
         </p>

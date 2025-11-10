@@ -33,8 +33,8 @@ function AboutUs() {
             className="lg:w-[600px] w-[150px] left-0 right-0 mx-auto"
           />
           <p className="text-center text-[#666666] raleway lg:text-[20px] text-[14px] mt-10 max-w-[700px] mx-auto">
-            Your trusted partner for reliable towing and roadside assistance
-            services in Osceola County
+            Osceola Towing is proud to be part of the family-owned Midwest Star Group
+            network with 9 locations serving Minnesota & Wisconsin.
           </p>
         </div>
       </div>
@@ -144,11 +144,13 @@ function AboutUs() {
             }}
             className="leading-[2] text-[#666666] raleway lg:text-[18px] text-[14px] lg:mb-0 mb-5 lg:mt-10 mt-5 max-w-[1000px] mx-auto"
           >
-            At Osceola Towing, we are more than just a towing company – we are a
-            team of dedicated professionals committed to providing top-notch
-            roadside assistance and towing services. With years of experience
-            and a passion for helping others, we pride ourselves on being the
-            trusted choice for drivers in Osceola County and beyond.
+            For over six decades, Midwest Star Group has been a family-owned leader
+            in towing and recovery across Minnesota and Wisconsin. Now, Osceola
+            Towing joins that legacy — bringing local service together with
+            regional strength. We’re still the same trusted team serving Osceola
+            and the St. Croix Valley, now powered by Midwest Star Group’s expanded
+            fleet and equipment. Whether you drive a car, truck, or heavy-duty rig,
+            we’ve got you covered 24/7.
           </motion.p>
         </div>
       </Wrapper>
@@ -163,11 +165,11 @@ function AboutUs() {
               className="lg:w-[50%]"
             >
               <Image
-                src="/assets/mission-image.svg"
-                alt="circle"
+                src="/assets/new-images/DJI_0484.jpg"
+                alt="Osceola Towing aerial facility view"
                 width={670}
                 height={548}
-                className="lg:w-auto lg:h-[548px]"
+                className="lg:w-auto lg:h-[548px] rounded-2xl object-cover"
               />
             </motion.div>
             <div className="lg:w-[60%]">
@@ -256,7 +258,7 @@ function AboutUs() {
       <Chooseus
         title="Why Choose Us"
         heading="Why Choose Osceola"
-        image="/assets/about-choose-image.svg"
+        image="/assets/new-images/DJI_0490.jpg"
         subHeading="Towing"
         data={ChooseCard}
       />
@@ -272,7 +274,7 @@ function AboutUs() {
       />
       <Emergency
         backgroundImage="bg-transparent lg:my-0 my-12"
-        image="/assets/about-emergency-image.svg"
+        image="/assets/new-images/DJI_0488.jpg"
         textColor1="text-[#F6B620]"
         textColor2="text-white"
       />

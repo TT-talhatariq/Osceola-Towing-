@@ -80,7 +80,7 @@ function BookServices() {
       <Aboutus
         serviceNumber="Book A Services"
         title="Book Now"
-        description="Need emergency assistance? Don’t wait! Our 24/7 service is just a few clicks away."
+        description="Need emergency assistance? Don't wait! Our 24/7 service is just a few clicks away."
         ulHeading="Service Type:"
         perfectForItems={[
           "Towing",
@@ -89,7 +89,7 @@ function BookServices() {
           "Long-Distance Towing",
         ]}
         buttonText="Book A Service"
-        imageSrc1="/assets/book-service.svg"
+        imageSrc1="/assets/new-images/DJI_0490.jpg"
         background="bg-[#F6B620] bg-opacity-10"
       />
       <ContactUs background="bg-transparent" />

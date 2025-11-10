@@ -31,7 +31,7 @@ function Service() {
             className="lg:w-[600px] w-[150px] left-0 right-0 mx-auto"
           />
           <p className="text-center text-[#666666] raleway lg:text-[20px] text-[14px] mt-10 max-w-[700px] mx-auto">
-            Professional towing and roadside assistance services available 24/7
+            Light, Medium & Heavy-Duty Towing • Roadside Assistance • Accident Recovery • Equipment Transport • Fleet Accounts
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@ function Service() {
         buttonLink="#contactUs"
         secondaryButtonText="View Details"
         secondaryButtonLink="/services/heavy-duty-towing"
-        imageSrc1="/assets/service-about-image.svg"
+        imageSrc1="/assets/new-images/DJI_0484.jpg"
         imageSrc2="/assets/towing2.jpg"
         textColor="text-white"
         listColor="text-white"
@@ -279,11 +279,11 @@ function Service() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Image
-                src="/assets/services-2.svg"
+                src="/assets/new-images/DJI_0488.jpg"
                 alt="Emergency Roadside Assistance"
                 width={567}
                 height={474}
-                className="w-full h-auto"
+                className="w-full h-auto rounded-2xl object-cover"
               />
             </motion.div>
           </div>
@@ -304,13 +304,13 @@ function Service() {
           "Dealership Transfers",
           "Cross-Country Moves",
         ]}
-        imageSrc1="/assets/services-3.svg"
+        imageSrc1="/assets/new-images/DJI_0490.jpg"
         background="bg-[#F6B620] bg-opacity-10"
       />
       <Chooseus
         title="Service : 04"
         heading="Accident Recovery"
-        image="/assets/about-choose-image.svg"
+        image="/assets/new-images/DJI_0484.jpg"
         description="When accidents happen, count on our rapid response team for professional recovery services. We handle everything from minor fender-benders to major incidents with specialized equipment and trained professionals. Our team works efficiently to clear the scene while preserving your vehicle's condition."
         perfectForItems={[
           "Collision Recovery",
