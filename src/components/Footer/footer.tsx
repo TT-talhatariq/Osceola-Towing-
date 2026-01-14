@@ -40,7 +40,7 @@ function Footer() {
             </p>
             <div className="flex items-center lg:justify-start justify-center gap-4">
               <div className="bg-white shadow-lg rounded-full w-[40px] h-[40px] flex items-center flex-col justify-center">
-                <Link href="https://www.facebook.com/p/Osceola-Towing-and-Recovery-61572520634520/">
+                <Link href="https://www.facebook.com/p/Osceola-Towing-and-Recovery-61572520634520/" target="_blank" rel="noopener noreferrer">
                   <FaFacebookF className="text-[#F6B620]" />
                 </Link>
               </div>{" "}
