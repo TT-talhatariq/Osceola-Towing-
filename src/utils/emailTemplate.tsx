@@ -87,7 +87,7 @@ export const EmailTemplate = ({ values }: { values: FormDataType }): string => {
           <div class="email-content">
             <div class="email-header">
               <img
-                src="https://www.sr-towing.vercel.app/assets/logo.png"
+                src="/assets/favicon.png"
                 alt="Oceola-Towing"
               />
             </div>

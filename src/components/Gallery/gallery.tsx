@@ -11,7 +11,7 @@ function Gallery() {
   return (
     <div>
       <Wrapper>
-        <div className="flex raleway justify-between lg:mt-32 mt-12 items-center lg:px-24 px-5">
+        <div className="flex raleway px-4 lg:px-0 justify-between lg:mt-32 mt-12 items-center lg:px-24 px-5">
           <div>
             <motion.h1
               whileInView={{ y: 0 }}
@@ -52,7 +52,7 @@ function Gallery() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:flex items-center justify-center lg:mt-20 mt-10 lg:px-5 px-3"
+          className="lg:flex items-center space-y-3 justify-center lg:mt-20 mt-10 lg:px-5 px-3"
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
