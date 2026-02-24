@@ -21,7 +21,7 @@ import Wrapper from "@/components/Wrapper/wrapper";
 function Homepage() {
   return (
     <>
-      <div className="relative overflow-hidden bg-gradient-to-b from-white via-white to-[#FFF7DC] mt-20 md:mt-28 lg:mt-32">
+      <div className="relative px-4 lg:px-0 overflow-hidden bg-gradient-to-b from-white via-white to-[#FFF7DC] mt-20 md:mt-28 lg:mt-32">
         <div className="pointer-events-none absolute -top-16 md:-top-24 left-1/2 h-[300px] w-[300px] md:h-[420px] md:w-[420px] -translate-x-1/2 rounded-full bg-[#F6B620]/15 blur-3xl lg:left-[10%] lg:-translate-x-0" />
         <Wrapper>
           <motion.section
@@ -52,7 +52,7 @@ function Homepage() {
                 <Link href="#contactUs" className="w-full sm:w-auto">
                   <Button
                     title="Request a Tow"
-                    width="w-full sm:w-auto"
+                    width="w-full sm:w-[182px]"
                     center="mx-0"
                   />
                 </Link>

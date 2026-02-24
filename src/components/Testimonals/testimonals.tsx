@@ -24,7 +24,7 @@ function Testimonials({
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className={`${background} lg:py-32 py-20`}>
+    <section className={`${background} px-4 lg:px-0 lg:py-32 py-20`}>
       <Wrapper>
         <div className="mx-auto">
           <motion.h1
